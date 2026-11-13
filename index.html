@@ -22,7 +22,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&family=Noto+Serif+Thai:wght@300;400&family=Noto+Sans+Thai:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&family=Noto+Serif+Thai:wght@300;400&family=Noto+Sans+Thai:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 /* Layout idea: night-dining page. Black-green ground, warm ivory text, one gold. Arched windows (hotel archway) frame every photo. Click opens a dialog. */
 :root{
@@ -33,6 +33,7 @@
   --faint:color-mix(in srgb,var(--ivory) 14%,var(--ink));
   --panel:color-mix(in srgb,var(--ivory) 5%,var(--ink));
   --display:"Cormorant Garamond","Noto Serif Thai","Times New Roman",serif;
+  --num:"Playfair Display","Noto Serif Thai","Times New Roman",serif;
   --caps:"Cinzel","Noto Serif Thai",serif;
   --body:"Jost","Noto Serif Thai",system-ui,sans-serif;
   color-scheme:dark;
@@ -79,7 +80,7 @@ nav{display:flex;align-items:center;justify-content:space-between;gap:20px;heigh
 .facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
 .fact{padding:44px 24px;border-right:1px solid var(--faint)}
 .fact:first-child{padding-left:0}.fact:last-child{border-right:0}
-.fact b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(46px,5.6vw,84px);line-height:1;color:var(--gold);font-variant-numeric:lining-nums tabular-nums}
+.fact b{display:block;font-family:var(--num);font-weight:400;font-size:clamp(38px,4.4vw,66px);line-height:1.05;color:var(--gold);font-variant-numeric:lining-nums;letter-spacing:-.01em}
 .fact span{display:block;margin-top:12px;color:var(--soft);font-size:14px;line-height:1.5}
 
 section{padding:120px 0}
@@ -100,7 +101,7 @@ p+p{margin-top:1.1em}
 .mich .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
 .mich h2{max-width:11ch}
 .years{display:flex;margin:40px 0 34px;border:1px solid var(--gold);width:max-content;max-width:100%}
-.years div{padding:18px 30px;border-right:1px solid var(--gold);font-family:var(--display);font-weight:400;font-size:clamp(30px,4.4vw,52px);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.years div{padding:18px 30px;border-right:1px solid var(--gold);font-family:var(--num);font-weight:400;font-size:clamp(26px,3.6vw,44px);line-height:1;font-variant-numeric:lining-nums;letter-spacing:.02em}
 .years div:last-child{border-right:0;color:var(--gold)}
 .keys{max-width:340px;margin-top:6px;display:block;transition:transform .4s}
 .keys:hover{transform:scale(1.04)}
@@ -111,8 +112,8 @@ p+p{margin-top:1.1em}
 .lead2 button{padding:44px 40px 48px;display:block;width:100%;transition:background .35s}
 .lead2 button+button{border-left:1px solid var(--gold)}
 .lead2 button:hover{background:var(--panel)}
-.rank{font-family:var(--display);font-weight:300;font-size:clamp(88px,13vw,190px);line-height:.85;letter-spacing:-.03em}
-.rank small{font-size:.26em;letter-spacing:0;margin-right:.2em;color:var(--gold);font-style:italic}
+.rank{font-family:var(--num);font-weight:400;font-size:clamp(80px,11vw,160px);line-height:.9;letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.rank small{font-family:var(--display);font-size:.26em;letter-spacing:0;margin-right:.2em;color:var(--gold);font-style:italic;font-weight:400}
 .what{margin-top:20px;color:var(--gold)}
 .lead2 p{margin-top:10px;color:var(--soft);font-size:15px}
 .more{display:inline-block;margin-top:16px;font-family:var(--caps);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
@@ -122,11 +123,11 @@ p+p{margin-top:1.1em}
 .tile:nth-child(3n){border-right:0}.tile:nth-last-child(-n+3){border-bottom:0}
 .tile:hover{background:var(--panel)}
 .tile .k{color:var(--gold)}
-.tile b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(52px,6vw,88px);line-height:1;margin:14px 0 12px;font-variant-numeric:lining-nums tabular-nums}
+.tile b{display:block;font-family:var(--num);font-weight:400;font-size:clamp(40px,4.6vw,66px);line-height:1.05;margin:14px 0 12px;font-variant-numeric:lining-nums;letter-spacing:-.01em}
 .tile .d{display:block;color:var(--soft);font-size:14px;line-height:1.5}
 .pos{display:grid;grid-template-columns:repeat(3,1fr);margin-top:60px;border-top:1px solid var(--gold)}
 .pos div{padding:30px 30px 8px 0}
-.pos b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(44px,5vw,70px);line-height:1;color:var(--gold)}
+.pos b{display:block;font-family:var(--num);font-weight:400;font-size:clamp(36px,3.8vw,56px);line-height:1.05;color:var(--gold);font-variant-numeric:lining-nums}
 .pos span{display:block;margin-top:10px;font-size:14px;color:var(--soft);line-height:1.5;max-width:30ch}
 .note{margin-top:36px;font-size:12px;color:var(--soft);letter-spacing:.04em}
 
@@ -199,7 +200,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
 @keyframes pop{from{opacity:.001;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
 .card{position:relative;background:var(--panel);border:1px solid var(--gold);width:min(640px,calc(100vw - 32px));max-height:calc(100vh - 48px);overflow:auto;padding:52px 48px 44px}
 .card h3{font-family:var(--display);font-weight:300;font-size:clamp(32px,4.6vw,52px);line-height:1.02;margin:14px 0 6px}
-.card .big-n{font-family:var(--display);font-weight:300;font-size:clamp(64px,10vw,112px);line-height:.9;color:var(--gold);margin:6px 0 14px}
+.card .big-n{font-family:var(--num);font-weight:400;font-size:clamp(50px,8vw,88px);line-height:1;color:var(--gold);margin:6px 0 14px;font-variant-numeric:lining-nums}
 .card p{font-size:16px}
 .card ul{padding-left:18px;margin-top:18px;color:color-mix(in srgb,var(--ivory) 82%,var(--ink));font-size:15.5px}
 .card li{padding:3px 0}
@@ -223,6 +224,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 @media (max-width:960px){
+  nav{gap:12px}.links{gap:6px 16px}.links a{letter-spacing:.18em}.pill{padding:10px 14px;letter-spacing:.18em}
   .hero,.split,.mich .wrap,.about-grid{grid-template-columns:1fr;gap:56px}
   .hero{padding:44px 0 56px}.hero h1 .it{margin-left:.4em}
   .hero .frame,.about-grid .frame{max-width:380px;margin:14px 14px 0 14px}
@@ -241,7 +243,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
   .lb{grid-template-columns:1fr;grid-template-rows:1fr;padding-bottom:10px}.lb>.nav{display:none}
   .navrow{display:flex}
 }
-@media (max-width:640px){.links li:not(:last-child):not(.keep){display:none}.fgrid{grid-template-columns:1fr}}
+@media (max-width:640px){.links li:not(:last-child):not(.keep){display:none}.years div{padding:16px 14px}.brand{font-size:12px;letter-spacing:.2em}.links{gap:6px 10px}.lang{padding:8px 10px;letter-spacing:.1em}.pill{padding:9px 12px;letter-spacing:.14em}.fgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -273,7 +275,6 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
       <div class="actions">
         <a class="btn" href="#plates">View the plates</a>
         <button class="link caps" type="button" data-contact>Work with me</button>
-        <a class="link caps" href="Chef-Chris-Resume.pdf" download>Download résumé</a>
       </div>
     </div>
     <div class="frame"><img src="img/chris-garden.jpg" alt="Chef Chris laughing in a black Phulay Bay chef jacket in front of a forest pavilion" width="999" height="1500"></div>
@@ -457,7 +458,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
     <a class="big" href="mailto:chefchris.jb01@gmail.com">chefchris.jb01@gmail.com</a>
     <div class="fgrid">
       <div><h4 class="caps">Chef</h4><ul><li>Jirawat Boonsit</li><li>“Chef Chris”</li><li>Phuket, Thailand</li></ul></div>
-      <div><h4 class="caps">Reach</h4><ul><li>+66 65 276 9151</li><li><a href="https://www.linkedin.com/in/jirawat-boonsit" rel="noopener">LinkedIn</a></li><li><a href="Chef-Chris-Resume.pdf" download>Download résumé</a></li></ul></div>
+      <div><h4 class="caps">Reach</h4><ul><li>+66 65 276 9151</li><li><a href="https://www.linkedin.com/in/jirawat-boonsit" rel="noopener">LinkedIn</a></li></ul></div>
       <div><h4 class="caps">Explore</h4><ul><li><a href="#michelin">Michelin</a></li><li><a href="#kpi">KPI</a></li><li><a href="#plates">Plates</a></li><li><a href="#journey">Journey</a></li></ul></div>
     </div>
     <div class="fine"><span>© 2026 Chef Chris Jirawat Boonsit</span><span>Designed and built by Chef Chris</span></div>
@@ -477,7 +478,6 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
     <div class="crow first"><span class="v">chefchris.jb01@gmail.com</span><button class="copy" type="button" data-copy="chefchris.jb01@gmail.com">Copy</button></div>
     <div class="crow"><span class="v">+66 65 276 9151</span><button class="copy" type="button" data-copy="+66 65 276 9151">Copy</button></div>
     <div class="crow"><a class="v link" href="https://www.linkedin.com/in/jirawat-boonsit" rel="noopener">LinkedIn</a><span class="caps gold">jirawat-boonsit</span></div>
-    <div class="crow"><a class="v link" href="Chef-Chris-Resume.pdf" download>Download résumé</a><span class="caps gold">PDF</span></div>
   </div>
 </dialog>
 
@@ -505,7 +505,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
   'Michelin':'มิชลิน','About':'เกี่ยวกับ','Plates':'จานอาหาร','Journey':'เส้นทาง','Consulting':'ที่ปรึกษา','Work with me':'ร่วมงานกับผม',
   'Sous Chef · Phulay Bay, a Ritz-Carlton Reserve':'ซูส์เชฟ · Phulay Bay, a Ritz-Carlton Reserve',
   'Southern Thai heritage, European technique and the standards of a MICHELIN 3 Keys resort, plated one course at a time.':'รากเหง้าอาหารไทยใต้ เทคนิคแบบยุโรป และมาตรฐานของรีสอร์ต MICHELIN 3 Keys ถ่ายทอดผ่านทุกคอร์สอย่างประณีต',
-  'View the plates':'ชมจานอาหาร','Download résumé':'ดาวน์โหลดเรซูเม่',
+  'View the plates':'ชมจานอาหาร',
   'Southern Thai Heritage':'รากเหง้าอาหารไทยใต้','European Technique':'เทคนิคยุโรป','Menu Development':'พัฒนาเมนู','Chef Consulting':'ที่ปรึกษาด้านเชฟ','Pastry & Bakery':'เพสทรีและเบเกอรี่',
   'years in luxury hospitality':'ปีในธุรกิจโรงแรมระดับหรู','chefs led in a single brigade':'เชฟที่นำทีมครัวเดียวกัน','food cost variance held':'ควบคุมส่วนต่างต้นทุนอาหารได้','signature Toffee Cakes sold':'ท็อฟฟี่เค้กซิกเนเจอร์ที่ขายได้',
   'Recognition · Phulay Bay':'รางวัลเกียรติยศ · Phulay Bay',
