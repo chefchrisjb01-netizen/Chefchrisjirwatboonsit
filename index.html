@@ -88,11 +88,33 @@ p+p{margin-top:1.1em}
 .years{display:flex;gap:0;margin:40px 0 34px;border:1px solid color-mix(in srgb,var(--ivory) 28%,var(--ink));width:max-content;max-width:100%}
 .years div{padding:18px 30px;border-right:1px solid color-mix(in srgb,var(--ivory) 28%,var(--ink));font-family:var(--display);font-size:clamp(26px,4vw,44px);line-height:1;font-variant-numeric:tabular-nums}
 .years div:last-child{border-right:0;color:var(--gold)}
-.keys{background:var(--ivory);padding:18px 26px;max-width:420px}
-.keys img{width:100%;height:auto;mix-blend-mode:multiply}
+.keys{max-width:380px;margin-top:6px}
+.keys img{width:100%;height:auto}
 .mich figure{justify-self:center;position:relative;max-width:380px}
 .mich figure img{width:100%;height:auto}
 .mich figure::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);z-index:-1}
+
+/* kpi */
+.kpi{border-top:0}
+.lead2{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--ink);margin-top:48px}
+.lead2 div{padding:40px 38px 44px}
+.lead2 div+div{border-left:1px solid var(--ink)}
+.rank{font-family:var(--display);font-weight:400;font-size:clamp(72px,11vw,150px);line-height:.9;letter-spacing:-.02em}
+.rank small{font-size:.28em;letter-spacing:0;margin-right:.15em;color:var(--gold);font-style:italic}
+.lead2 .what{margin-top:18px;color:var(--gold)}
+.lead2 p{margin-top:10px;color:var(--soft);font-size:15px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);margin-top:0;border:1px solid var(--line);border-top:0}
+.tile{padding:34px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tile:nth-child(3n){border-right:0}
+.tile:nth-last-child(-n+3){border-bottom:0}
+.tile .k{color:var(--gold)}
+.tile b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(46px,5.4vw,74px);line-height:1;margin:14px 0 12px;font-variant-numeric:tabular-nums}
+.tile span.d{display:block;color:var(--soft);font-size:14px;line-height:1.5}
+.pos{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--ink)}
+.pos div{padding:28px 28px 8px 0}
+.pos b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(36px,4vw,54px);line-height:1;color:var(--gold)}
+.pos span{display:block;margin-top:10px;font-size:14px;color:var(--soft);line-height:1.5;max-width:30ch}
+.note{margin-top:34px;font-size:12px;color:var(--soft);letter-spacing:.04em}
 
 /* plates */
 .plates{column-count:4;column-gap:14px;margin-top:56px}
@@ -144,6 +166,9 @@ footer .caps{color:var(--gold)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 @media (max-width:900px){
   .mich{padding:72px 0}.mich .wrap{grid-template-columns:1fr;gap:56px}.mich figure{margin-right:14px}
+  .lead2{grid-template-columns:1fr}.lead2 div+div{border-left:0;border-top:1px solid var(--ink)}.lead2 div{padding:30px 24px 34px}
+  .tiles{grid-template-columns:1fr 1fr}.tile{padding:26px 20px}.tile:nth-child(3n){border-right:1px solid var(--line)}.tile:nth-child(2n){border-right:0}.tile:nth-last-child(-n+3){border-bottom:1px solid var(--line)}.tile:nth-last-child(-n+2){border-bottom:0}
+  .pos{grid-template-columns:1fr}.pos div{padding:22px 0 6px}
   .hero,.split{grid-template-columns:1fr;gap:44px}
   .hero{padding:44px 0 64px}
   .hero figure{max-width:440px;margin-right:14px}
@@ -165,6 +190,7 @@ footer .caps{color:var(--gold)}
       <a class="brand" href="#top">Chef Chris</a>
       <ul class="links">
         <li><a href="#michelin">Michelin</a></li>
+        <li><a href="#kpi">KPI</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#plates">Plates</a></li>
         <li><a href="#journey">Journey</a></li>
@@ -207,9 +233,38 @@ footer .caps{color:var(--gold)}
         <h2 id="mich-h">MICHELIN <em>3 Keys</em></h2>
         <p>Phulay Bay, a Ritz-Carlton Reserve, holds the MICHELIN Guide’s highest Key distinction, three years running. I lead its culinary operations, and stepped in as in-charge Executive Chef during part of this period.</p>
         <div class="years" aria-label="Years awarded"><div>2024</div><div>2025</div><div>2026</div></div>
-        <div class="keys"><img src="img/michelin-keys.jpg" alt="Three MICHELIN Keys" loading="lazy"></div>
+        <div class="keys"><img src="img/michelin-keys.png" alt="Three MICHELIN Keys" loading="lazy"></div>
       </div>
       <figure><img src="img/michelin-phulay.jpg" alt="Aerial view of Phulay Bay and its pavilion above the Andaman Sea, marked MICHELIN 2024 2025 2026" width="415" height="738" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="kpi" id="kpi">
+    <div class="wrap">
+      <div class="eyebrow caps">KPI results · 2025–2026</div>
+      <h2>Numbers that follow the plates.</h2>
+      <p>Guest and quality results for Phulay Bay culinary, including the period I led the kitchens without an Executive Chef.</p>
+
+      <div class="lead2">
+        <div><div class="rank"><small>No.</small>1</div><div class="what caps">ITR score</div><p>Ranked No. 1 across TCLM properties. YTD 2026, during the period without an Executive Chef.</p></div>
+        <div><div class="rank"><small>No.</small>3</div><div class="what caps">Quality of food</div><p>Ranked No. 3 across TCLM properties. YTD 2026, during the period without an Executive Chef.</p></div>
+      </div>
+
+      <div class="tiles">
+        <div class="tile"><div class="k caps">Phulay Bay ITR</div><b>92.6</b><span class="d">APEC Luxury ranking: No. 1 property in the ranking.</span></div>
+        <div class="tile"><div class="k caps">Q3 vs Q2 ITR</div><b>+4.2 pts</b><span class="d">ITR improved to 95.6 in the Q3 vs Q2 report.</span></div>
+        <div class="tile"><div class="k caps">Food quality</div><b>82.7%</b><span class="d">2026 YTD, equal to the same time last year.</span></div>
+        <div class="tile"><div class="k caps">F&amp;B guest voice</div><b>No. 4</b><span class="d">Mid-year KPI ranking across Marriott TCLM.</span></div>
+        <div class="tile"><div class="k caps">Guest voice score</div><b>No. 2</b><span class="d">Mid-year ranking across Marriott TCLM.</span></div>
+        <div class="tile"><div class="k caps">LQA · F&amp;B</div><b>94.8%</b><span class="d">Overall F&amp;B result in the LQA snapshot.</span></div>
+      </div>
+
+      <div class="pos">
+        <div><b>#1</b><span>APEC Luxury ranker, shown at 92.6 ITR.</span></div>
+        <div><b>92.6</b><span>Listed first in the APEC Top 5 properties comparison.</span></div>
+        <div><b>#11</b><span>APEC global rank in the global comparison.</span></div>
+      </div>
+      <p class="note">Rankings and scores as reported for 2025–2026 in Marriott TCLM and APEC reports.</p>
     </div>
   </section>
 
@@ -288,15 +343,6 @@ footer .caps{color:var(--gold)}
         </li>
       </ul>
 
-      <div style="margin-top:96px">
-        <div class="eyebrow caps">Recognition</div>
-        <ul class="awards">
-          <li><span class="t">Five-Star Manager Level</span><span class="w caps">Q3 2026</span></li>
-          <li><span class="t">Culinary Department WOW Story Winner</span><span class="w caps">September 2026</span></li>
-          <li><span class="t">Highest Training Hours, Culinary Department</span><span class="w caps">Quarter 1 · 2026</span></li>
-          <li><span class="t">Top 25 Restaurant Awards · Lae Lay &amp; Sritrang</span><span class="w caps">Thailand</span></li>
-        </ul>
-      </div>
     </div>
   </section>
 
