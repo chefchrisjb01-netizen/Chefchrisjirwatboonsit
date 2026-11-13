@@ -7,182 +7,217 @@
 <meta name="description" content="Chef Chris (Jirawat Boonsit), Sous Chef at Phulay Bay, a Ritz-Carlton Reserve. Southern Thai heritage, European technique and MICHELIN 3 Keys luxury dining. Chef consulting in Thailand.">
 <meta name="keywords" content="Chef Chris, Jirawat Boonsit, Phulay Bay, Ritz-Carlton Reserve, Michelin Key, sous chef Phuket, chef consultant Thailand, luxury dining, Southern Thai cuisine">
 <meta property="og:title" content="Chef Chris Jirawat Boonsit">
-<meta property="og:description" content="Sous Chef at Phulay Bay, a Ritz-Carlton Reserve. Southern Thai heritage, European technique, Michelin Key luxury dining.">
+<meta property="og:description" content="Sous Chef at Phulay Bay, a Ritz-Carlton Reserve. Southern Thai heritage, European technique, MICHELIN 3 Keys luxury dining.">
 <meta property="og:type" content="profile">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jirawat Boonsit","alternateName":"Chef Chris","jobTitle":"Sous Chef","worksFor":{"@type":"Organization","name":"Phulay Bay, a Ritz-Carlton Reserve"},"email":"chefchris.jb01@gmail.com","telephone":"+66652769151","address":{"@type":"PostalAddress","addressRegion":"Phuket","addressCountry":"TH"},"sameAs":["https://www.linkedin.com/in/jirawat-boonsit"],"knowsAbout":["Fine dining","Southern Thai cuisine","Menu development","Pastry and bakery","Food cost control","Culinary team leadership"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&family=Noto+Serif+Thai:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&family=Noto+Serif+Thai:wght@300;400&display=swap" rel="stylesheet">
 <style>
-/* Layout idea: quiet gallery-white page. Light high-contrast serif for names, tracked caps for labels, one champagne-gold accent. Three colors only. */
+/* Layout idea: night-dining page. Black-green ground, warm ivory text, one gold. Arched windows (hotel archway) frame every photo. Click opens a dialog. */
 :root{
-  --ivory:#F5F2EC;
-  --ink:#15130F;
-  --gold:#9C7E4E;
-  --soft:color-mix(in srgb,var(--ink) 62%,var(--ivory));
-  --line:color-mix(in srgb,var(--ink) 16%,var(--ivory));
-  --display:"Bodoni Moda","Noto Serif Thai","Didot",serif;
+  --ink:#0C100E;
+  --ivory:#EFE9DC;
+  --gold:#C6A56B;
+  --soft:color-mix(in srgb,var(--ivory) 66%,var(--ink));
+  --faint:color-mix(in srgb,var(--ivory) 14%,var(--ink));
+  --panel:color-mix(in srgb,var(--ivory) 5%,var(--ink));
+  --display:"Cormorant Garamond","Noto Serif Thai","Times New Roman",serif;
+  --caps:"Cinzel","Noto Serif Thai",serif;
   --body:"Jost","Noto Serif Thai",system-ui,sans-serif;
-  color-scheme:light;
+  color-scheme:dark;
 }
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{background:var(--ivory);color:var(--ink);font-family:var(--body);font-weight:300;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--ink);color:var(--ivory);font-family:var(--body);font-weight:300;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;text-align:left}
 :focus-visible{outline:1px solid var(--gold);outline-offset:4px}
-.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
-.caps{font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:400}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.caps{font-family:var(--caps);font-size:11px;letter-spacing:.34em;text-transform:uppercase;font-weight:400}
 .gold{color:var(--gold)}
 
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--ivory) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
-.brand{font-family:var(--display);font-size:20px;text-decoration:none;letter-spacing:.04em}
-.links{display:flex;gap:6px 28px;flex-wrap:wrap;justify-content:flex-end;list-style:none;padding:0}
-.links a{font-size:11px;letter-spacing:.28em;text-transform:uppercase;text-decoration:none;color:var(--soft);transition:color .3s}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--ink) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--faint)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.brand{font-family:var(--caps);font-size:14px;letter-spacing:.3em;text-decoration:none;text-transform:uppercase}
+.links{display:flex;gap:6px 26px;list-style:none;padding:0;align-items:center}
+.links a{font-family:var(--caps);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;color:var(--soft);transition:color .3s}
 .links a:hover{color:var(--gold)}
+.pill{border:1px solid var(--gold);padding:10px 20px;color:var(--gold);font-family:var(--caps);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;transition:background .3s,color .3s}
+.pill:hover{background:var(--gold);color:var(--ink)}
 
-.hero{padding:72px 0 88px;display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:end}
-.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(54px,9.5vw,138px);line-height:.95;letter-spacing:-.015em;margin:26px 0 8px}
-.aka{font-family:var(--display);font-style:italic;font-size:clamp(22px,2.6vw,34px);color:var(--gold)}
-.lede{margin-top:36px;max-width:44ch;font-size:19px;line-height:1.7}
-.th{margin-top:14px;color:var(--soft);font-size:15px;font-family:var(--display)}
-.actions{display:flex;gap:14px 30px;flex-wrap:wrap;margin-top:40px;align-items:center}
-.btn{display:inline-block;padding:15px 30px;border:1px solid var(--ink);text-decoration:none;transition:background .3s,color .3s}
-.btn:hover{background:var(--ink);color:var(--ivory)}
-.link{text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .3s}
-.link:hover{color:var(--gold)}
-.hero figure{position:relative}
-.hero figure img{width:100%;height:auto}
-.hero figure::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);z-index:-1}
+.hero{padding:72px 0 80px;display:grid;grid-template-columns:1.25fr .75fr;gap:72px;align-items:center}
+.hero h1{font-family:var(--display);font-weight:300;font-size:clamp(60px,10vw,160px);line-height:.88;letter-spacing:-.02em;margin:30px 0 0}
+.hero h1 span{display:block}
+.hero h1 .it{font-style:italic;color:var(--gold);font-weight:300;margin-left:.5em;white-space:nowrap}
+.lede{margin-top:40px;max-width:42ch;font-size:19px;color:color-mix(in srgb,var(--ivory) 86%,var(--ink))}
+.th{margin-top:12px;color:var(--soft);font-family:var(--display);font-size:18px}
+.actions{display:flex;gap:18px 32px;flex-wrap:wrap;margin-top:44px;align-items:center}
+.frame{position:relative}
+.frame::before{content:"";position:absolute;inset:-14px;border:1px solid var(--gold);border-radius:999px 999px 0 0;opacity:.7;pointer-events:none}
+.frame img{width:100%;height:auto;border-radius:999px 999px 0 0;aspect-ratio:2/3;object-fit:cover}
+.hero .frame{animation:rise 1.1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:.001;transform:translateY(24px)}to{opacity:1;transform:none}}
 
-.facts{border-block:1px solid var(--line)}
+.ticker{border-block:1px solid var(--faint);overflow:hidden;padding:18px 0}
+.ticker .track{display:flex;gap:44px;width:max-content;animation:slide 46s linear infinite}
+.ticker span{font-family:var(--caps);font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.ticker span::after{content:"◆";margin-left:44px;color:var(--gold);font-size:8px;vertical-align:1px}
+@keyframes slide{to{transform:translateX(-50%)}}
+
 .facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.fact{padding:34px 24px;border-right:1px solid var(--line)}
-.fact:first-child{padding-left:0}
-.fact:last-child{border-right:0}
-.fact b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(38px,4.6vw,60px);line-height:1;font-variant-numeric:tabular-nums}
+.fact{padding:44px 24px;border-right:1px solid var(--faint)}
+.fact:first-child{padding-left:0}.fact:last-child{border-right:0}
+.fact b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(46px,5.6vw,84px);line-height:1;color:var(--gold);font-variant-numeric:lining-nums tabular-nums}
 .fact span{display:block;margin-top:12px;color:var(--soft);font-size:14px;line-height:1.5}
 
-section{padding:112px 0}
+section{padding:120px 0}
 .eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:30px;color:var(--gold)}
-.eyebrow::after{content:"";height:1px;width:64px;background:var(--gold)}
-h2{font-family:var(--display);font-weight:400;font-size:clamp(36px,5.2vw,68px);line-height:1.04;letter-spacing:-.01em;text-wrap:balance;margin-bottom:30px;max-width:18ch}
-p{max-width:60ch;text-wrap:pretty}
+.eyebrow::after{content:"";height:1px;width:72px;background:var(--gold);opacity:.7}
+h2{font-family:var(--display);font-weight:300;font-size:clamp(42px,6.4vw,92px);line-height:.98;letter-spacing:-.015em;text-wrap:balance;margin-bottom:30px;max-width:16ch}
+h2 em{font-style:italic;color:var(--gold)}
+p{max-width:60ch;text-wrap:pretty;color:color-mix(in srgb,var(--ivory) 82%,var(--ink))}
 p+p{margin-top:1.1em}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-.quote{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(30px,4.4vw,58px);line-height:1.12;max-width:20ch;text-wrap:balance}
-.about-img{max-width:460px;justify-self:end;width:100%}
-.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:center}
+.btn{display:inline-block;padding:16px 34px;border:1px solid var(--ivory);text-decoration:none;font-family:var(--caps);font-size:11px;letter-spacing:.3em;text-transform:uppercase;transition:background .3s,color .3s}
+.btn:hover{background:var(--ivory);color:var(--ink)}
+.link{text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:5px;transition:color .3s}
+.link:hover{color:var(--gold)}
 
-/* michelin */
-.mich{background:var(--ink);color:var(--ivory);padding:104px 0}
-.mich .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center}
-.mich .eyebrow{color:var(--gold)}
-.mich h2{max-width:14ch;margin-bottom:22px}
-.mich h2 em{font-style:italic;color:var(--gold)}
-.mich p{color:color-mix(in srgb,var(--ivory) 78%,var(--ink))}
-.years{display:flex;gap:0;margin:40px 0 34px;border:1px solid color-mix(in srgb,var(--ivory) 28%,var(--ink));width:max-content;max-width:100%}
-.years div{padding:18px 30px;border-right:1px solid color-mix(in srgb,var(--ivory) 28%,var(--ink));font-family:var(--display);font-size:clamp(26px,4vw,44px);line-height:1;font-variant-numeric:tabular-nums}
+.mich{background:var(--panel);background-image:linear-gradient(45deg,var(--faint) 1px,transparent 1px),linear-gradient(-45deg,var(--faint) 1px,transparent 1px);background-size:44px 44px;border-block:1px solid var(--faint);position:relative}
+.mich::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,var(--panel) 38%,transparent 80%);pointer-events:none}
+.mich .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+.mich h2{max-width:11ch}
+.years{display:flex;margin:40px 0 34px;border:1px solid var(--gold);width:max-content;max-width:100%}
+.years div{padding:18px 30px;border-right:1px solid var(--gold);font-family:var(--display);font-weight:400;font-size:clamp(30px,4.4vw,52px);line-height:1;font-variant-numeric:lining-nums tabular-nums}
 .years div:last-child{border-right:0;color:var(--gold)}
-.keys{max-width:380px;margin-top:6px}
+.keys{max-width:340px;margin-top:6px;display:block;transition:transform .4s}
+.keys:hover{transform:scale(1.04)}
 .keys img{width:100%;height:auto}
-.mich figure{justify-self:center;position:relative;max-width:380px}
-.mich figure img{width:100%;height:auto}
-.mich figure::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);z-index:-1}
+.mich .frame{max-width:380px;justify-self:center;cursor:zoom-in}
 
-/* kpi */
-.kpi{border-top:0}
-.lead2{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--ink);margin-top:48px}
-.lead2 div{padding:40px 38px 44px}
-.lead2 div+div{border-left:1px solid var(--ink)}
-.rank{font-family:var(--display);font-weight:400;font-size:clamp(72px,11vw,150px);line-height:.9;letter-spacing:-.02em}
-.rank small{font-size:.28em;letter-spacing:0;margin-right:.15em;color:var(--gold);font-style:italic}
-.lead2 .what{margin-top:18px;color:var(--gold)}
+.lead2{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--gold);margin-top:52px}
+.lead2 button{padding:44px 40px 48px;display:block;width:100%;transition:background .35s}
+.lead2 button+button{border-left:1px solid var(--gold)}
+.lead2 button:hover{background:var(--panel)}
+.rank{font-family:var(--display);font-weight:300;font-size:clamp(88px,13vw,190px);line-height:.85;letter-spacing:-.03em}
+.rank small{font-size:.26em;letter-spacing:0;margin-right:.2em;color:var(--gold);font-style:italic}
+.what{margin-top:20px;color:var(--gold)}
 .lead2 p{margin-top:10px;color:var(--soft);font-size:15px}
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);margin-top:0;border:1px solid var(--line);border-top:0}
-.tile{padding:34px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-.tile:nth-child(3n){border-right:0}
-.tile:nth-last-child(-n+3){border-bottom:0}
+.more{display:inline-block;margin-top:16px;font-family:var(--caps);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.more::after{content:" +"}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--faint);border-top:0}
+.tile{padding:38px 32px;border-right:1px solid var(--faint);border-bottom:1px solid var(--faint);transition:background .35s;display:block;width:100%}
+.tile:nth-child(3n){border-right:0}.tile:nth-last-child(-n+3){border-bottom:0}
+.tile:hover{background:var(--panel)}
 .tile .k{color:var(--gold)}
-.tile b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(46px,5.4vw,74px);line-height:1;margin:14px 0 12px;font-variant-numeric:tabular-nums}
-.tile span.d{display:block;color:var(--soft);font-size:14px;line-height:1.5}
-.pos{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--ink)}
-.pos div{padding:28px 28px 8px 0}
-.pos b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(36px,4vw,54px);line-height:1;color:var(--gold)}
+.tile b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(52px,6vw,88px);line-height:1;margin:14px 0 12px;font-variant-numeric:lining-nums tabular-nums}
+.tile .d{display:block;color:var(--soft);font-size:14px;line-height:1.5}
+.pos{display:grid;grid-template-columns:repeat(3,1fr);margin-top:60px;border-top:1px solid var(--gold)}
+.pos div{padding:30px 30px 8px 0}
+.pos b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(44px,5vw,70px);line-height:1;color:var(--gold)}
 .pos span{display:block;margin-top:10px;font-size:14px;color:var(--soft);line-height:1.5;max-width:30ch}
-.note{margin-top:34px;font-size:12px;color:var(--soft);letter-spacing:.04em}
+.note{margin-top:36px;font-size:12px;color:var(--soft);letter-spacing:.04em}
 
-/* plates */
-.plates{column-count:4;column-gap:14px;margin-top:56px}
-.plates img{width:100%;height:auto;margin-bottom:14px;break-inside:avoid;transition:opacity .4s}
-.plates:hover img{opacity:.78}.plates img:hover{opacity:1}
-.sig{list-style:none;padding:0;margin-top:80px;border-top:1px solid var(--line)}
-.sig li{display:grid;grid-template-columns:70px 1fr 1.2fr;gap:24px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.sig .n{font-family:var(--display);color:var(--gold);font-size:18px}
-.sig .t{font-family:var(--display);font-size:clamp(26px,3.2vw,40px);line-height:1.1}
+.about-grid{grid-template-columns:.8fr 1.2fr}
+.about-grid .frame{max-width:420px}
+.quote{font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(36px,5vw,68px);line-height:1.05;max-width:16ch;text-wrap:balance;margin-bottom:40px;color:var(--ivory)}
+
+.plates{column-count:4;column-gap:14px;margin-top:60px}
+.plate{display:block;position:relative;width:100%;margin-bottom:14px;break-inside:avoid;overflow:hidden;cursor:zoom-in}
+.plate img{width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s}
+.plate::after{content:"+";position:absolute;right:12px;bottom:10px;width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);background:color-mix(in srgb,var(--ink) 70%,transparent);font-size:20px;line-height:1;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+.plate:hover img,.plate:focus-visible img{transform:scale(1.05);filter:brightness(1.06)}
+.plate:hover::after,.plate:focus-visible::after{opacity:1;transform:none}
+.sig{list-style:none;padding:0;margin-top:90px;border-top:1px solid var(--faint)}
+.sig li{display:grid;grid-template-columns:70px 1fr 1.2fr;gap:24px;padding:34px 0;border-bottom:1px solid var(--faint);align-items:baseline}
+.sig .n{font-family:var(--caps);color:var(--gold);font-size:13px;letter-spacing:.2em}
+.sig .t{font-family:var(--display);font-weight:400;font-size:clamp(30px,3.8vw,52px);line-height:1.05}
 .sig p{color:var(--soft);font-size:15px}
+.banner img{width:100%;height:clamp(260px,42vw,560px);object-fit:cover;filter:brightness(.82)}
 
-/* journey */
-.rows{list-style:none;padding:0;border-top:1px solid var(--line)}
-.rows>li{display:grid;grid-template-columns:190px 1fr;gap:8px 40px;padding:38px 0;border-bottom:1px solid var(--line)}
-.rows .y{color:var(--soft);font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding-top:.9em}
-.rows .v{font-family:var(--display);font-size:clamp(26px,3.2vw,42px);line-height:1.1}
-.rows .r{color:var(--gold);margin:8px 0 14px}
-.rows ul{padding-left:18px;color:var(--soft);font-size:15px;max-width:66ch}
-.rows ul li{padding:2px 0}
+.jhead{display:grid;grid-template-columns:1fr 280px;gap:64px;align-items:end;margin-bottom:44px}
+.jhead h2{margin-bottom:30px}
+.jhead .frame img{aspect-ratio:3/4}
+.rows{list-style:none;padding:0;border-top:1px solid var(--faint)}
+.rowbtn{display:grid;grid-template-columns:200px 1fr 40px;gap:8px 40px;padding:40px 0;width:100%;border-bottom:1px solid var(--faint);align-items:start;transition:padding .35s,background .35s}
+.rowbtn:hover{padding-left:20px;background:var(--panel)}
+.rowbtn .y{font-family:var(--caps);color:var(--soft);font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding-top:1em}
+.rowbtn .v{font-family:var(--display);font-weight:400;font-size:clamp(30px,3.8vw,52px);line-height:1.05}
+.rowbtn .r{margin-top:10px;color:var(--gold)}
+.rowbtn .go{align-self:center;justify-self:end;width:40px;height:40px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:22px;line-height:1}
 
-.jhead{display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:end;margin-bottom:36px}
-.jhead h2{margin-bottom:0}
-.jhead img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.banner{position:relative;margin-top:0}
-.banner img{width:100%;height:clamp(240px,40vw,520px);object-fit:cover}
-
-.awards{list-style:none;padding:0;border-top:1px solid var(--line)}
-.awards li{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.awards .t{font-family:var(--display);font-size:clamp(22px,2.6vw,32px);line-height:1.15}
-.awards .w{color:var(--gold)}
-
-/* consulting + faq */
-.clients{display:flex;flex-wrap:wrap;gap:10px 32px;margin-top:34px;font-family:var(--display);font-size:22px;color:var(--soft)}
-.faq{margin-top:20px;border-top:1px solid var(--line)}
-.faq details{border-bottom:1px solid var(--line);padding:22px 0}
-.faq summary{cursor:pointer;list-style:none;font-family:var(--display);font-size:clamp(20px,2.3vw,28px);display:flex;justify-content:space-between;gap:20px}
+.clients{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:36px;font-family:var(--display);font-size:26px;color:var(--soft);font-style:italic}
+.faq{border-top:1px solid var(--faint);margin-top:14px}
+.faq details{border-bottom:1px solid var(--faint);padding:24px 0}
+.faq summary{cursor:pointer;list-style:none;font-family:var(--display);font-size:clamp(24px,2.6vw,34px);display:flex;justify-content:space-between;gap:20px;line-height:1.15}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";color:var(--gold);font-family:var(--body);font-weight:300}
 .faq details[open] summary::after{content:"–"}
 .faq p{margin-top:14px;color:var(--soft);font-size:16px}
 
-footer{background:var(--ink);color:var(--ivory);padding:100px 0 38px}
+footer{border-top:1px solid var(--gold);padding:110px 0 40px;background:var(--panel)}
 footer .caps{color:var(--gold)}
-.big{display:block;font-family:var(--display);font-size:clamp(30px,6vw,84px);line-height:1.05;margin:22px 0 0;text-decoration:none;overflow-wrap:anywhere;transition:color .3s}
+.big{display:block;font-family:var(--display);font-weight:300;font-size:clamp(34px,7vw,104px);line-height:1;margin:26px 0 0;text-decoration:none;overflow-wrap:anywhere;transition:color .3s}
 .big:hover{color:var(--gold)}
-.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:80px;font-size:15px}
-.fgrid h4{margin-bottom:12px;font-weight:400}
-.fgrid ul{list-style:none;padding:0;display:grid;gap:4px;color:color-mix(in srgb,var(--ivory) 72%,var(--ink))}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:90px;font-size:15px}
+.fgrid h4{margin-bottom:14px;font-weight:400}
+.fgrid ul{list-style:none;padding:0;display:grid;gap:4px;color:var(--soft)}
 .fgrid a{text-decoration:none}.fgrid a:hover{color:var(--gold)}
-.fine{margin-top:70px;padding-top:22px;border-top:1px solid color-mix(in srgb,var(--ivory) 20%,var(--ink));display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:color-mix(in srgb,var(--ivory) 66%,var(--ink))}
+.fine{margin-top:80px;padding-top:22px;border-top:1px solid var(--faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--soft)}
 
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-@media (max-width:900px){
-  .mich{padding:72px 0}.mich .wrap{grid-template-columns:1fr;gap:56px}.mich figure{margin-right:14px}
-  .lead2{grid-template-columns:1fr}.lead2 div+div{border-left:0;border-top:1px solid var(--ink)}.lead2 div{padding:30px 24px 34px}
-  .tiles{grid-template-columns:1fr 1fr}.tile{padding:26px 20px}.tile:nth-child(3n){border-right:1px solid var(--line)}.tile:nth-child(2n){border-right:0}.tile:nth-last-child(-n+3){border-bottom:1px solid var(--line)}.tile:nth-last-child(-n+2){border-bottom:0}
-  .pos{grid-template-columns:1fr}.pos div{padding:22px 0 6px}
-  .jhead{grid-template-columns:1fr;gap:28px}.jhead img{max-width:300px}
-  .hero,.split{grid-template-columns:1fr;gap:44px}
-  .hero{padding:44px 0 64px}
-  .hero figure{max-width:440px;margin-right:14px}
-  .facts .wrap{grid-template-columns:1fr 1fr}.fact{padding:26px 18px}.fact:nth-child(2){border-right:0}.fact:nth-child(-n+2){border-bottom:1px solid var(--line)}.fact:nth-child(odd){padding-left:0}
+dialog{margin:auto;border:0;padding:0;background:transparent;color:var(--ivory);max-width:100vw;max-height:100vh;overflow:visible}
+dialog::backdrop{background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(6px)}
+dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes pop{from{opacity:.001;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+.card{position:relative;background:var(--panel);border:1px solid var(--gold);width:min(640px,calc(100vw - 32px));max-height:calc(100vh - 48px);overflow:auto;padding:52px 48px 44px}
+.card h3{font-family:var(--display);font-weight:300;font-size:clamp(32px,4.6vw,52px);line-height:1.02;margin:14px 0 6px}
+.card .big-n{font-family:var(--display);font-weight:300;font-size:clamp(64px,10vw,112px);line-height:.9;color:var(--gold);margin:6px 0 14px}
+.card p{font-size:16px}
+.card ul{padding-left:18px;margin-top:18px;color:color-mix(in srgb,var(--ivory) 82%,var(--ink));font-size:15.5px}
+.card li{padding:3px 0}
+.x{position:absolute;top:14px;right:14px;width:42px;height:42px;border:1px solid var(--faint);display:grid;place-items:center;font-size:22px;line-height:1;color:var(--ivory);transition:border-color .3s,color .3s}
+.x:hover{border-color:var(--gold);color:var(--gold)}
+.crow{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;border-bottom:1px solid var(--faint);flex-wrap:wrap}
+.crow.first{border-top:1px solid var(--faint);margin-top:22px}
+.crow .v{font-family:var(--display);font-size:clamp(22px,3.6vw,30px);overflow-wrap:anywhere}
+.copy{border:1px solid var(--gold);padding:8px 16px;font-family:var(--caps);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);transition:background .3s,color .3s}
+.copy:hover{background:var(--gold);color:var(--ink)}
+.lb{display:grid;grid-template-columns:56px minmax(0,1fr) 56px;align-items:center;gap:12px;width:min(1040px,100vw);height:100vh;padding:20px 12px}
+.lb figure{display:grid;gap:14px;justify-items:center;max-height:100%}
+.lb img{max-height:calc(100vh - 120px);width:auto;max-width:100%;border:1px solid var(--gold)}
+.lb figcaption{font-family:var(--caps);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--soft)}
+.nav{width:52px;height:52px;border:1px solid var(--faint);display:grid;place-items:center;font-size:26px;line-height:1;color:var(--ivory);transition:border-color .3s,color .3s}
+.nav:hover{border-color:var(--gold);color:var(--gold)}
+.lb .x{position:fixed;top:16px;right:16px;background:color-mix(in srgb,var(--ink) 70%,transparent)}
+.navrow{display:none;justify-content:center;gap:16px}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:var(--gold);color:var(--ink);padding:10px 22px;font-family:var(--caps);font-size:11px;letter-spacing:.24em;text-transform:uppercase;opacity:0;pointer-events:none;transition:opacity .3s;z-index:99}
+.toast.on{opacity:1}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+@media (max-width:960px){
+  .hero,.split,.mich .wrap,.about-grid{grid-template-columns:1fr;gap:56px}
+  .hero{padding:44px 0 56px}.hero h1 .it{margin-left:.4em}
+  .hero .frame,.about-grid .frame{max-width:380px;margin:14px 14px 0 14px}
+  .mich .frame{margin:14px}
+  .facts .wrap{grid-template-columns:1fr 1fr}.fact{padding:30px 18px}.fact:nth-child(2){border-right:0}.fact:nth-child(-n+2){border-bottom:1px solid var(--faint)}.fact:nth-child(odd){padding-left:0}
+  section{padding:80px 0}
+  .lead2{grid-template-columns:1fr}.lead2 button+button{border-left:0;border-top:1px solid var(--gold)}.lead2 button{padding:32px 24px 36px}
+  .tiles{grid-template-columns:1fr 1fr}.tile{padding:28px 20px}.tile:nth-child(3n){border-right:1px solid var(--faint)}.tile:nth-child(2n){border-right:0}.tile:nth-last-child(-n+3){border-bottom:1px solid var(--faint)}.tile:nth-last-child(-n+2){border-bottom:0}
+  .pos{grid-template-columns:1fr}.pos div{padding:24px 0 6px}
   .plates{column-count:2}
   .sig li{grid-template-columns:44px 1fr}.sig p{grid-column:2}
-  .rows>li{grid-template-columns:1fr}.rows .y{padding-top:0}
+  .jhead{grid-template-columns:1fr;gap:30px}.jhead .frame{max-width:240px;margin:14px}
+  .rowbtn{grid-template-columns:1fr 40px;padding:30px 0}.rowbtn .y{grid-column:1/-1;padding-top:0}.rowbtn:hover{padding-left:10px}
   .fgrid{grid-template-columns:1fr 1fr}
-  section{padding:76px 0}
+  .card{padding:50px 24px 32px}
+  .lb{grid-template-columns:1fr;grid-template-rows:1fr;padding-bottom:10px}.lb>.nav{display:none}
+  .navrow{display:flex}
 }
-@media (max-width:520px){.links{display:none}.fgrid{grid-template-columns:1fr}}
+@media (max-width:640px){.links li:not(:last-child){display:none}.fgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -198,7 +233,7 @@ footer .caps{color:var(--gold)}
         <li><a href="#plates">Plates</a></li>
         <li><a href="#journey">Journey</a></li>
         <li><a href="#consulting">Consulting</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><button class="pill" type="button" data-contact>Work with me</button></li>
       </ul>
     </nav>
   </div>
@@ -208,16 +243,22 @@ footer .caps{color:var(--gold)}
   <div class="wrap hero">
     <div>
       <div class="caps gold">Sous Chef · Phulay Bay, a Ritz-Carlton Reserve</div>
-      <h1>Jirawat<br>Boonsit</h1>
-      <div class="aka">known as Chef Chris</div>
-      <p class="lede">Southern Thai heritage, European technique and the standards of a Michelin Key resort, plated one course at a time.</p>
+      <h1><span>Jirawat</span><span>Boonsit</span><span class="it">Chef Chris</span></h1>
+      <p class="lede">Southern Thai heritage, European technique and the standards of a MICHELIN 3 Keys resort, plated one course at a time.</p>
       <p class="th">รากเหง้าอาหารไทยใต้ เทคนิคยุโรป และมาตรฐานรีสอร์ตระดับโลก</p>
       <div class="actions">
-        <a class="btn caps" href="#plates">View the plates</a>
-        <a class="link caps" href="#contact">Work with me</a>
+        <a class="btn" href="#plates">View the plates</a>
+        <button class="link caps" type="button" data-contact>Work with me</button>
       </div>
     </div>
-    <figure><img src="img/chris-garden.jpg" alt="Chef Chris laughing in a black Phulay Bay chef jacket in front of a forest pavilion" width="999" height="1500"></figure>
+    <div class="frame"><img src="img/chris-garden.jpg" alt="Chef Chris laughing in a black Phulay Bay chef jacket in front of a forest pavilion" width="999" height="1500"></div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="track">
+      <span>MICHELIN 3 Keys</span><span>Ritz-Carlton Reserve</span><span>Southern Thai Heritage</span><span>European Technique</span><span>Menu Development</span><span>Chef Consulting</span><span>Pastry &amp; Bakery</span>
+      <span>MICHELIN 3 Keys</span><span>Ritz-Carlton Reserve</span><span>Southern Thai Heritage</span><span>European Technique</span><span>Menu Development</span><span>Chef Consulting</span><span>Pastry &amp; Bakery</span>
+    </div>
   </div>
 
   <div class="facts">
@@ -236,30 +277,34 @@ footer .caps{color:var(--gold)}
         <h2 id="mich-h">MICHELIN <em>3 Keys</em></h2>
         <p>Phulay Bay, a Ritz-Carlton Reserve, holds the MICHELIN Guide’s highest Key distinction, three years running. I lead its culinary operations, and stepped in as in-charge Executive Chef during part of this period.</p>
         <div class="years" aria-label="Years awarded"><div>2024</div><div>2025</div><div>2026</div></div>
-        <div class="keys"><img src="img/michelin-keys.png" alt="Three MICHELIN Keys" loading="lazy"></div>
+        <button class="keys" type="button" data-pop="mich" aria-label="Open MICHELIN details"><img src="img/michelin-keys.png" alt="Three MICHELIN Keys"></button>
       </div>
-      <figure><img src="img/michelin-phulay.jpg" alt="Aerial view of Phulay Bay and its pavilion above the Andaman Sea, marked MICHELIN 2024 2025 2026" width="415" height="738" loading="lazy"></figure>
+      <div class="frame" data-lb="mich" data-src="img/michelin-phulay.jpg" data-cap="MICHELIN 2024 · 2025 · 2026"><img src="img/michelin-phulay.jpg" alt="Aerial view of Phulay Bay and its pavilion above the Andaman Sea, marked MICHELIN 2024 2025 2026" width="415" height="738" loading="lazy"></div>
     </div>
   </section>
 
-  <section class="kpi" id="kpi">
+  <section id="kpi" style="padding-bottom:100px">
     <div class="wrap">
       <div class="eyebrow caps">KPI results · 2025–2026</div>
-      <h2>Numbers that follow the plates.</h2>
-      <p>Guest and quality results for Phulay Bay culinary, including the period I led the kitchens without an Executive Chef.</p>
+      <h2>Numbers that follow <em>the plates.</em></h2>
+      <p>Guest and quality results for Phulay Bay culinary, including the period I led the kitchens without an Executive Chef. Tap any figure for detail.</p>
 
       <div class="lead2">
-        <div><div class="rank"><small>No.</small>1</div><div class="what caps">ITR score</div><p>Ranked No. 1 across TCLM properties. YTD 2026, during the period without an Executive Chef.</p></div>
-        <div><div class="rank"><small>No.</small>3</div><div class="what caps">Quality of food</div><p>Ranked No. 3 across TCLM properties. YTD 2026, during the period without an Executive Chef.</p></div>
+        <button type="button" data-pop="kpi" data-k="Culinary leadership · TCLM" data-v="No. 1" data-t="ITR score" data-x="Ranked No. 1 across TCLM properties. Year to date 2026, during the period without an Executive Chef.">
+          <div class="rank"><small>No.</small>1</div><div class="what caps">ITR score</div><p>Ranked No. 1 across TCLM properties. YTD 2026, during the period without an Executive Chef.</p><span class="more">Detail</span>
+        </button>
+        <button type="button" data-pop="kpi" data-k="Culinary leadership · TCLM" data-v="No. 3" data-t="Quality of food" data-x="Ranked No. 3 across TCLM properties. Year to date 2026, during the period without an Executive Chef.">
+          <div class="rank"><small>No.</small>3</div><div class="what caps">Quality of food</div><p>Ranked No. 3 across TCLM properties. YTD 2026, during the period without an Executive Chef.</p><span class="more">Detail</span>
+        </button>
       </div>
 
       <div class="tiles">
-        <div class="tile"><div class="k caps">Phulay Bay ITR</div><b>92.6</b><span class="d">APEC Luxury ranking: No. 1 property in the ranking.</span></div>
-        <div class="tile"><div class="k caps">Q3 vs Q2 ITR</div><b>+4.2 pts</b><span class="d">ITR improved to 95.6 in the Q3 vs Q2 report.</span></div>
-        <div class="tile"><div class="k caps">Food quality</div><b>82.7%</b><span class="d">2026 YTD, equal to the same time last year.</span></div>
-        <div class="tile"><div class="k caps">F&amp;B guest voice</div><b>No. 4</b><span class="d">Mid-year KPI ranking across Marriott TCLM.</span></div>
-        <div class="tile"><div class="k caps">Guest voice score</div><b>No. 2</b><span class="d">Mid-year ranking across Marriott TCLM.</span></div>
-        <div class="tile"><div class="k caps">LQA · F&amp;B</div><b>94.8%</b><span class="d">Overall F&amp;B result in the LQA snapshot.</span></div>
+        <button class="tile" type="button" data-pop="kpi" data-k="Phulay Bay ITR" data-v="92.6" data-t="ITR, APEC Luxury ranking" data-x="Phulay Bay is shown as the No. 1 property in the APEC Luxury ranking at 92.6 ITR."><div class="k caps">Phulay Bay ITR</div><b>92.6</b><span class="d">APEC Luxury ranking: No. 1 property in the ranking.</span></button>
+        <button class="tile" type="button" data-pop="kpi" data-k="Q3 vs Q2 ITR" data-v="+4.2 pts" data-t="ITR improvement" data-x="Phulay Bay ITR improved by 4.2 points to 95.6 in the Q3 versus Q2 report."><div class="k caps">Q3 vs Q2 ITR</div><b>+4.2 pts</b><span class="d">ITR improved to 95.6 in the Q3 vs Q2 report.</span></button>
+        <button class="tile" type="button" data-pop="kpi" data-k="Food quality" data-v="82.7%" data-t="Quality of food, 2026 YTD" data-x="Food and Beverage Quality of Food stands at 82.7% year to date 2026, equal to the same time last year."><div class="k caps">Food quality</div><b>82.7%</b><span class="d">2026 YTD, equal to the same time last year.</span></button>
+        <button class="tile" type="button" data-pop="kpi" data-k="F&amp;B guest voice" data-v="No. 4" data-t="Mid-year KPI ranking" data-x="Ranked No. 4 in the mid-year F&amp;B Guest Voice KPI ranking across Marriott TCLM."><div class="k caps">F&amp;B guest voice</div><b>No. 4</b><span class="d">Mid-year KPI ranking across Marriott TCLM.</span></button>
+        <button class="tile" type="button" data-pop="kpi" data-k="Guest voice score" data-v="No. 2" data-t="Mid-year ranking" data-x="Ranked No. 2 in the mid-year Guest Voice Score ranking across Marriott TCLM."><div class="k caps">Guest voice score</div><b>No. 2</b><span class="d">Mid-year ranking across Marriott TCLM.</span></button>
+        <button class="tile" type="button" data-pop="kpi" data-k="LQA · F&amp;B" data-v="94.8%" data-t="Overall F&amp;B result" data-x="Overall Food and Beverage result of 94.8% in the LQA snapshot."><div class="k caps">LQA · F&amp;B</div><b>94.8%</b><span class="d">Overall F&amp;B result in the LQA snapshot.</span></button>
       </div>
 
       <div class="pos">
@@ -271,41 +316,40 @@ footer .caps{color:var(--gold)}
     </div>
   </section>
 
-  <section id="about">
-    <div class="wrap split">
+  <section id="about" style="padding-top:20px">
+    <div class="wrap split about-grid">
+      <div class="frame"><img src="img/chris-smile.jpg" alt="Chef Chris smiling in white chef whites" loading="lazy"></div>
       <div>
         <div class="eyebrow caps">The chef</div>
         <p class="quote">Preserving heritage while embracing innovation.</p>
-        <p style="margin-top:44px">I lead culinary teams in ultra-luxury resorts, Michelin-level dining rooms, banquets and private Chef’s Table concepts. My cooking joins refined European technique with the flavors of Southern Thailand, held to luxury hospitality standards.</p>
+        <p>I lead culinary teams in ultra-luxury resorts, Michelin-level dining rooms, banquets and private Chef’s Table concepts. My cooking joins refined European technique with the flavors of Southern Thailand, held to luxury hospitality standards.</p>
         <p>Along the way I have worked with Ritz-Carlton Reserve, Marriott International and Hyatt Hotels Corporation, and built my own private dining brand in Krabi.</p>
-      </div>
-      <div class="about-img">
-        <img src="img/chris-smile.jpg" alt="Chef Chris smiling in white chef whites" loading="lazy">
       </div>
     </div>
   </section>
 
-  <section id="plates" style="padding-top:0">
+  <section id="plates" style="padding-top:20px">
     <div class="wrap">
       <div class="eyebrow caps">Selected plates</div>
-      <h2>Cooked with restraint. Finished by hand.</h2>
+      <h2>Cooked with restraint. <em>Finished by hand.</em></h2>
+      <p>Tap a plate to see it larger.</p>
       <div class="plates">
-        <img src="img/d03.jpg" alt="Cured salmon with beetroot and caviar" loading="lazy">
-        <img src="img/d09.jpg" alt="Poached white fish in a green broth" loading="lazy">
-        <img src="img/d02.jpg" alt="Roasted poultry with shaved black truffle" loading="lazy">
-        <img src="img/d16.jpg" alt="Seared fish in a dark broth with black truffle" loading="lazy">
-        <img src="img/d01.jpg" alt="Seafood in a bright citrus broth with trout roe" loading="lazy">
-        <img src="img/d07.jpg" alt="Caviar over a chilled herb soup" loading="lazy">
-        <img src="img/d05.jpg" alt="Braised beef with a lace tuile" loading="lazy">
-        <img src="img/d14.jpg" alt="Scallop with caviar on roasted cauliflower" loading="lazy">
-        <img src="img/d04.jpg" alt="Seared foie gras with truffle and hazelnut" loading="lazy">
-        <img src="img/d10.jpg" alt="Wagyu with cherry and pickled shallot" loading="lazy">
-        <img src="img/d11.jpg" alt="Green sorbet with citrus and mango spheres" loading="lazy">
-        <img src="img/d12.jpg" alt="Oyster course with caviar and a golden broth" loading="lazy">
-        <img src="img/d08.jpg" alt="Grilled prawn with tomato and a glossy sauce" loading="lazy">
-        <img src="img/d15.jpg" alt="Beef tenderloin with truffle and celeriac" loading="lazy">
-        <img src="img/d06.jpg" alt="Mango dessert with a green leaf tuile" loading="lazy">
-        <img src="img/d13.jpg" alt="Glazed pork belly with a savory tartlet" loading="lazy">
+        <button class="plate" type="button" data-lb="plates"><img src="img/d03.jpg" alt="Cured salmon with beetroot and caviar" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d09.jpg" alt="Poached white fish in a green broth" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d02.jpg" alt="Roasted poultry with shaved black truffle" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d16.jpg" alt="Seared fish in a dark broth with black truffle" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d01.jpg" alt="Seafood in a bright citrus broth with trout roe" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d07.jpg" alt="Caviar over a chilled herb soup" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d05.jpg" alt="Braised beef with a lace tuile" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d14.jpg" alt="Scallop with caviar on roasted cauliflower" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d04.jpg" alt="Seared foie gras with truffle and hazelnut" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d10.jpg" alt="Seared beef with cherry and pickled shallot" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d11.jpg" alt="Green sorbet with citrus and mango spheres" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d12.jpg" alt="Oyster course with caviar and a golden broth" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d08.jpg" alt="Grilled prawn with tomato and a glossy sauce" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d15.jpg" alt="Beef tenderloin with truffle and celeriac" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d06.jpg" alt="Mango dessert with a green leaf tuile" loading="lazy"></button>
+        <button class="plate" type="button" data-lb="plates"><img src="img/d13.jpg" alt="Glazed pork belly with a savory tartlet" loading="lazy"></button>
       </div>
       <ul class="sig">
         <li><span class="n">I</span><span class="t">Earth &amp; Ember</span><p>One of my signature courses.</p></li>
@@ -323,45 +367,50 @@ footer .caps{color:var(--gold)}
       <div class="jhead">
         <div>
           <div class="eyebrow caps">Journey</div>
-          <h2>Four kitchens, one standard.</h2>
+          <h2>Four kitchens, <em>one standard.</em></h2>
+          <p>Tap a role to read what I led there.</p>
         </div>
-        <img src="img/chris-buffet.jpg" alt="Chef Chris laughing beside a resort buffet" loading="lazy">
+        <div class="frame"><img src="img/chris-buffet.jpg" alt="Chef Chris laughing beside a resort buffet" loading="lazy"></div>
       </div>
       <ul class="rows">
         <li>
-          <span class="y">Jul 2025 — Present</span>
-          <div><div class="v">Phulay Bay, a Ritz-Carlton Reserve</div><div class="r caps">Sous Chef · In charge of Executive Chef</div>
-          <ul><li>Lead culinary operations across several luxury dining outlets at a Michelin Key resort.</li><li>Manage a brigade of 54 chefs and kitchen professionals.</li><li>Work with Executive Chef Christian Herrgesell on menus and culinary innovation.</li><li>Served as in-charge Executive Chef during leadership transitions.</li><li>Contributed to Sritrang Restaurant’s place among Thailand’s Top 25 Restaurants.</li></ul></div>
+          <button class="rowbtn" type="button" data-pop="role" data-y="Jul 2025 — Present" data-v="Phulay Bay, a Ritz-Carlton Reserve" data-r="Sous Chef · In charge of Executive Chef">
+            <span class="y">Jul 2025 — Present</span><span><span class="v">Phulay Bay, a Ritz-Carlton Reserve</span><br><span class="r caps">Sous Chef · In charge of Executive Chef</span></span><span class="go">+</span>
+          </button>
+          <ul hidden><li>Lead culinary operations across several luxury dining outlets at a Michelin Key resort.</li><li>Manage a brigade of 54 chefs and kitchen professionals.</li><li>Work with Executive Chef Christian Herrgesell on menus and culinary innovation.</li><li>Served as in-charge Executive Chef during leadership transitions.</li><li>Contributed to Sritrang Restaurant’s place among Thailand’s Top 25 Restaurants.</li></ul>
         </li>
         <li>
-          <span class="y">Sep 2023 — Jul 2025</span>
-          <div><div class="v">Hyatt Regency Phuket Resort</div><div class="r caps">Sous Chef</div>
-          <ul><li>Ran culinary operations across All-Day Dining, Pool Bar, In-Room Dining, Regency Club and Banquets.</li><li>Led and developed a team of 26 professionals.</li><li>Directed premium banquet catering and large-scale events.</li></ul></div>
+          <button class="rowbtn" type="button" data-pop="role" data-y="Sep 2023 — Jul 2025" data-v="Hyatt Regency Phuket Resort" data-r="Sous Chef">
+            <span class="y">Sep 2023 — Jul 2025</span><span><span class="v">Hyatt Regency Phuket Resort</span><br><span class="r caps">Sous Chef</span></span><span class="go">+</span>
+          </button>
+          <ul hidden><li>Ran culinary operations across All-Day Dining, Pool Bar, In-Room Dining, Regency Club and Banquets.</li><li>Led and developed a team of 26 professionals.</li><li>Directed premium banquet catering and large-scale events.</li></ul>
         </li>
         <li>
-          <span class="y">Mar 2023 — Aug 2023</span>
-          <div><div class="v">Phuket Marriott Resort &amp; Spa, Nai Yang Beach</div><div class="r caps">Junior Sous Chef</div>
-          <ul><li>Delivered international cuisine standards and premium guest dining experiences.</li></ul></div>
+          <button class="rowbtn" type="button" data-pop="role" data-y="Mar 2023 — Aug 2023" data-v="Phuket Marriott Resort &amp; Spa, Nai Yang Beach" data-r="Junior Sous Chef">
+            <span class="y">Mar 2023 — Aug 2023</span><span><span class="v">Phuket Marriott Resort &amp; Spa, Nai Yang Beach</span><br><span class="r caps">Junior Sous Chef</span></span><span class="go">+</span>
+          </button>
+          <ul hidden><li>Delivered international cuisine standards and premium guest dining experiences.</li></ul>
         </li>
         <li>
-          <span class="y">Dec 2020 — Feb 2023</span>
-          <div><div class="v">Chef’s House Private Chef’s Table</div><div class="r caps">Co-Founder &amp; Owner Chef</div>
-          <ul><li>Founded a private Chef’s Table concept in Krabi with seasonal tasting menus inspired by European, Italian and Asian cuisines.</li><li>Built customer loyalty through personal luxury dining.</li></ul></div>
+          <button class="rowbtn" type="button" data-pop="role" data-y="Dec 2020 — Feb 2023" data-v="Chef’s House Private Chef’s Table" data-r="Co-Founder &amp; Owner Chef">
+            <span class="y">Dec 2020 — Feb 2023</span><span><span class="v">Chef’s House Private Chef’s Table</span><br><span class="r caps">Co-Founder &amp; Owner Chef</span></span><span class="go">+</span>
+          </button>
+          <ul hidden><li>Founded a private Chef’s Table concept in Krabi with seasonal tasting menus inspired by European, Italian and Asian cuisines.</li><li>Built customer loyalty through personal luxury dining.</li></ul>
         </li>
       </ul>
-
     </div>
   </section>
 
-  <section id="consulting" style="padding-top:0">
-    <div class="wrap split">
+  <section id="consulting" style="padding-top:20px">
+    <div class="wrap split" style="align-items:start">
       <div>
         <div class="eyebrow caps">Chef consulting</div>
-        <h2>Your menu, your kitchen, raised.</h2>
+        <h2>Your menu, your kitchen, <em>raised.</em></h2>
         <p>Menu development, recipe standardization, food cost control and team training for independent restaurants and cafés across Thailand.</p>
         <div class="clients">
           <span>Cello Ville Restaurant</span><span>Lekker Café</span><span>Sa Bieang Na Café &amp; Bistro</span><span>Tempo Restaurant &amp; KTV</span><span>Davin Café</span>
         </div>
+        <div class="actions"><button class="btn" type="button" data-contact>Start a conversation</button></div>
       </div>
       <div>
         <div class="eyebrow caps">Questions people ask</div>
@@ -384,11 +433,105 @@ footer .caps{color:var(--gold)}
     <div class="fgrid">
       <div><h4 class="caps">Chef</h4><ul><li>Jirawat Boonsit</li><li>“Chef Chris”</li><li>Phuket, Thailand</li></ul></div>
       <div><h4 class="caps">Reach</h4><ul><li>+66 65 276 9151</li><li><a href="https://www.linkedin.com/in/jirawat-boonsit" rel="noopener">LinkedIn</a></li></ul></div>
-      <div><h4 class="caps">Explore</h4><ul><li><a href="#about">About</a></li><li><a href="#plates">Plates</a></li><li><a href="#journey">Journey</a></li><li><a href="#consulting">Consulting</a></li></ul></div>
+      <div><h4 class="caps">Explore</h4><ul><li><a href="#michelin">Michelin</a></li><li><a href="#kpi">KPI</a></li><li><a href="#plates">Plates</a></li><li><a href="#journey">Journey</a></li></ul></div>
     </div>
     <div class="fine"><span>© 2026 Chef Chris Jirawat Boonsit</span><span>Designed and built by Chef Chris</span></div>
   </div>
 </footer>
 
+<dialog id="pop" aria-label="Details">
+  <div class="card"><button class="x" type="button" data-close aria-label="Close">×</button><div id="pop-body"></div></div>
+</dialog>
+
+<dialog id="contact-pop" aria-label="Contact Chef Chris">
+  <div class="card">
+    <button class="x" type="button" data-close aria-label="Close">×</button>
+    <div class="caps gold">Work with me</div>
+    <h3>Let’s plan your next table.</h3>
+    <p>Menus, kitchen systems, consulting and private dining. Tell me about your venue.</p>
+    <div class="crow first"><span class="v">chefchris.jb01@gmail.com</span><button class="copy" type="button" data-copy="chefchris.jb01@gmail.com">Copy</button></div>
+    <div class="crow"><span class="v">+66 65 276 9151</span><button class="copy" type="button" data-copy="+66 65 276 9151">Copy</button></div>
+    <div class="crow"><a class="v link" href="https://www.linkedin.com/in/jirawat-boonsit" rel="noopener">LinkedIn</a><span class="caps gold">jirawat-boonsit</span></div>
+  </div>
+</dialog>
+
+<dialog id="lb" aria-label="Image viewer">
+  <div class="lb">
+    <button class="x" type="button" data-close aria-label="Close">×</button>
+    <button class="nav" type="button" id="lb-prev" aria-label="Previous">‹</button>
+    <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption>
+      <div class="navrow"><button class="nav" type="button" id="lb-prev2" aria-label="Previous">‹</button><button class="nav" type="button" id="lb-next2" aria-label="Next">›</button></div>
+    </figure>
+    <button class="nav" type="button" id="lb-next" aria-label="Next">›</button>
+  </div>
+</dialog>
+<div class="toast" id="toast" role="status">Copied</div>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)};
+  var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  function open(d){ try{ if(d.showModal) d.showModal(); else d.setAttribute('open',''); }catch(e){ d.setAttribute('open',''); } document.body.style.overflow='hidden'; }
+  function close(d){ try{ d.close(); }catch(e){ d.removeAttribute('open'); } document.body.style.overflow=''; }
+  var pop=$('#pop'), body=$('#pop-body'), contact=$('#contact-pop'), lb=$('#lb');
+
+  $$('dialog').forEach(function(d){
+    d.addEventListener('click',function(e){ if(e.target===d||e.target.closest('[data-close]')) close(d); });
+    d.addEventListener('close',function(){document.body.style.overflow=''});
+  });
+
+  $$('[data-pop]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-pop'), h='';
+      if(t==='kpi'){
+        h='<div class="caps gold">'+b.dataset.k+'</div><div class="big-n">'+b.dataset.v+'</div><h3>'+b.dataset.t+'</h3><p>'+b.dataset.x+'</p>';
+      } else if(t==='role'){
+        var ul=b.parentNode.querySelector('ul');
+        h='<div class="caps gold">'+b.dataset.y+'</div><h3>'+b.dataset.v+'</h3><div class="caps" style="color:var(--soft)">'+b.dataset.r+'</div><ul>'+ul.innerHTML+'</ul>';
+      } else if(t==='mich'){
+        h='<div class="caps gold">Recognition · Phulay Bay</div><h3>MICHELIN 3 Keys</h3><p>Phulay Bay, a Ritz-Carlton Reserve, is recognized with MICHELIN 3 Keys for 2024, 2025 and 2026. Chef Chris leads its culinary operations.</p><div style="margin-top:26px;max-width:280px"><img src="img/michelin-keys.png" alt="Three MICHELIN Keys" style="width:100%"></div>';
+      }
+      body.innerHTML=h; open(pop);
+    });
+  });
+
+  $$('[data-contact]').forEach(function(b){ b.addEventListener('click',function(){ open(contact); }); });
+  var toast=$('#toast'), tt;
+  function say(m){ toast.textContent=m; toast.classList.add('on'); clearTimeout(tt); tt=setTimeout(function(){toast.classList.remove('on')},1800); }
+  $$('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var v=b.getAttribute('data-copy');
+      try{ navigator.clipboard.writeText(v).then(function(){say('Copied')},function(){say(v)}); }catch(e){ say(v); }
+    });
+  });
+
+  var items=[], idx=0, img=$('#lb-img'), cap=$('#lb-cap');
+  function show(i){
+    idx=(i+items.length)%items.length;
+    var it=items[idx], multi=items.length>1;
+    img.src=it.src; img.alt=it.alt;
+    cap.textContent=multi?('Plate '+String(idx+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0')):it.cap;
+    ['#lb-prev','#lb-next','#lb-prev2','#lb-next2'].forEach(function(s){$(s).style.visibility=multi?'visible':'hidden'});
+  }
+  function openLb(group,el){
+    var els=$$('[data-lb="'+group+'"]');
+    items=els.map(function(e){
+      var im=e.tagName==='IMG'?e:e.querySelector('img');
+      return {src:e.getAttribute('data-src')||im.getAttribute('src'),alt:im.alt,cap:e.getAttribute('data-cap')||''};
+    });
+    show(els.indexOf(el)); open(lb);
+  }
+  $$('[data-lb]').forEach(function(e){
+    e.addEventListener('click',function(){ openLb(e.getAttribute('data-lb'),e); });
+    if(e.tagName!=='BUTTON'){ e.setAttribute('tabindex','0'); e.setAttribute('role','button'); e.addEventListener('keydown',function(k){ if(k.key==='Enter'||k.key===' '){k.preventDefault();openLb(e.getAttribute('data-lb'),e);} }); }
+  });
+  $('#lb-prev').onclick=$('#lb-prev2').onclick=function(){show(idx-1)};
+  $('#lb-next').onclick=$('#lb-next2').onclick=function(){show(idx+1)};
+  lb.addEventListener('keydown',function(k){ if(k.key==='ArrowLeft')show(idx-1); if(k.key==='ArrowRight')show(idx+1); });
+  var sx=null;
+  lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){ if(sx===null)return; var dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>50) show(idx+(dx<0?1:-1)); sx=null; },{passive:true});
+})();
+</script>
 </body>
 </html>
