@@ -9,12 +9,20 @@
 <meta property="og:title" content="Chef Chris Jirawat Boonsit">
 <meta property="og:description" content="Sous Chef at Phulay Bay, a Ritz-Carlton Reserve. Southern Thai heritage, European technique, MICHELIN 3 Keys luxury dining.">
 <meta property="og:type" content="profile">
+<meta property="og:url" content="https://chefchrisjb01-netizen.github.io/Chefchrisjirwatboonsit/">
+<meta property="og:image" content="https://chefchrisjb01-netizen.github.io/Chefchrisjirwatboonsit/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chefchrisjb01-netizen.github.io/Chefchrisjirwatboonsit/img/og.jpg">
+<meta name="theme-color" content="#0C100E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230C100E'/%3E%3Ctext x='32' y='46' font-size='42' text-anchor='middle' fill='%23C6A56B' font-family='Georgia,serif' font-style='italic'%3EC%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jirawat Boonsit","alternateName":"Chef Chris","jobTitle":"Sous Chef","worksFor":{"@type":"Organization","name":"Phulay Bay, a Ritz-Carlton Reserve"},"email":"chefchris.jb01@gmail.com","telephone":"+66652769151","address":{"@type":"PostalAddress","addressRegion":"Phuket","addressCountry":"TH"},"sameAs":["https://www.linkedin.com/in/jirawat-boonsit"],"knowsAbout":["Fine dining","Southern Thai cuisine","Menu development","Pastry and bakery","Food cost control","Culinary team leadership"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&family=Noto+Serif+Thai:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&family=Noto+Serif+Thai:wght@300;400&family=Noto+Sans+Thai:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 /* Layout idea: night-dining page. Black-green ground, warm ivory text, one gold. Arched windows (hotel archway) frame every photo. Click opens a dialog. */
 :root{
@@ -169,6 +177,22 @@ footer .caps{color:var(--gold)}
 .fgrid a{text-decoration:none}.fgrid a:hover{color:var(--gold)}
 .fine{margin-top:80px;padding-top:22px;border-top:1px solid var(--faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--soft)}
 
+
+.lang{border:1px solid var(--faint);padding:8px 14px;font-family:var(--caps);font-size:10.5px;letter-spacing:.2em;color:var(--soft);transition:border-color .3s,color .3s}
+.lang:hover{border-color:var(--gold);color:var(--gold)}
+/* Thai typography */
+html[lang=th]{--display:"Noto Serif Thai","Cormorant Garamond",serif;--caps:"Noto Sans Thai","Cinzel",sans-serif;--body:"Noto Sans Thai","Jost",sans-serif}
+html[lang=th] *:not(.brand){letter-spacing:normal!important;text-transform:none!important}
+html[lang=th] body{line-height:1.9}
+html[lang=th] .caps,html[lang=th] .links a,html[lang=th] .pill,html[lang=th] .btn,html[lang=th] .more,html[lang=th] .copy{font-size:13px}
+html[lang=th] h2{font-size:clamp(32px,4.6vw,64px);line-height:1.3;font-weight:400}
+html[lang=th] .quote{font-size:clamp(30px,4vw,54px);line-height:1.35;font-weight:400}
+html[lang=th] .sig .t,html[lang=th] .rowbtn .v,html[lang=th] .card h3{line-height:1.3}
+html[lang=th] .faq summary{line-height:1.45}
+html[lang=th] .clients,html[lang=th] .th{font-style:normal}
+html[lang=th] .hero h1 .it{font-style:normal}
+html[lang=th] .rank small{font-style:normal}
+
 dialog{margin:auto;border:0;padding:0;background:transparent;color:var(--ivory);max-width:100vw;max-height:100vh;overflow:visible}
 dialog::backdrop{background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(6px)}
 dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
@@ -217,7 +241,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
   .lb{grid-template-columns:1fr;grid-template-rows:1fr;padding-bottom:10px}.lb>.nav{display:none}
   .navrow{display:flex}
 }
-@media (max-width:640px){.links li:not(:last-child){display:none}.fgrid{grid-template-columns:1fr}}
+@media (max-width:640px){.links li:not(:last-child):not(.keep){display:none}.fgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -233,6 +257,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
         <li><a href="#plates">Plates</a></li>
         <li><a href="#journey">Journey</a></li>
         <li><a href="#consulting">Consulting</a></li>
+        <li class="keep"><button class="lang" type="button" id="lang" data-nt aria-label="เปลี่ยนเป็นภาษาไทย">ไทย</button></li>
         <li><button class="pill" type="button" data-contact>Work with me</button></li>
       </ul>
     </nav>
@@ -249,6 +274,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
       <div class="actions">
         <a class="btn" href="#plates">View the plates</a>
         <button class="link caps" type="button" data-contact>Work with me</button>
+        <a class="link caps" href="Chef-Chris-Resume.pdf" download>Download résumé</a>
       </div>
     </div>
     <div class="frame"><img src="img/chris-garden.jpg" alt="Chef Chris laughing in a black Phulay Bay chef jacket in front of a forest pavilion" width="999" height="1500"></div>
@@ -432,7 +458,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
     <a class="big" href="mailto:chefchris.jb01@gmail.com">chefchris.jb01@gmail.com</a>
     <div class="fgrid">
       <div><h4 class="caps">Chef</h4><ul><li>Jirawat Boonsit</li><li>“Chef Chris”</li><li>Phuket, Thailand</li></ul></div>
-      <div><h4 class="caps">Reach</h4><ul><li>+66 65 276 9151</li><li><a href="https://www.linkedin.com/in/jirawat-boonsit" rel="noopener">LinkedIn</a></li></ul></div>
+      <div><h4 class="caps">Reach</h4><ul><li>+66 65 276 9151</li><li><a href="https://www.linkedin.com/in/jirawat-boonsit" rel="noopener">LinkedIn</a></li><li><a href="Chef-Chris-Resume.pdf" download>Download résumé</a></li></ul></div>
       <div><h4 class="caps">Explore</h4><ul><li><a href="#michelin">Michelin</a></li><li><a href="#kpi">KPI</a></li><li><a href="#plates">Plates</a></li><li><a href="#journey">Journey</a></li></ul></div>
     </div>
     <div class="fine"><span>© 2026 Chef Chris Jirawat Boonsit</span><span>Designed and built by Chef Chris</span></div>
@@ -452,6 +478,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
     <div class="crow first"><span class="v">chefchris.jb01@gmail.com</span><button class="copy" type="button" data-copy="chefchris.jb01@gmail.com">Copy</button></div>
     <div class="crow"><span class="v">+66 65 276 9151</span><button class="copy" type="button" data-copy="+66 65 276 9151">Copy</button></div>
     <div class="crow"><a class="v link" href="https://www.linkedin.com/in/jirawat-boonsit" rel="noopener">LinkedIn</a><span class="caps gold">jirawat-boonsit</span></div>
+    <div class="crow"><a class="v link" href="Chef-Chris-Resume.pdf" download>Download résumé</a><span class="caps gold">PDF</span></div>
   </div>
 </dialog>
 
@@ -475,6 +502,90 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
   function close(d){ try{ d.close(); }catch(e){ d.removeAttribute('open'); } document.body.style.overflow=''; }
   var pop=$('#pop'), body=$('#pop-body'), contact=$('#contact-pop'), lb=$('#lb');
 
+  var TH={
+  'Michelin':'มิชลิน','About':'เกี่ยวกับ','Plates':'จานอาหาร','Journey':'เส้นทาง','Consulting':'ที่ปรึกษา','Work with me':'ร่วมงานกับผม',
+  'Sous Chef · Phulay Bay, a Ritz-Carlton Reserve':'ซูส์เชฟ · Phulay Bay, a Ritz-Carlton Reserve',
+  'Southern Thai heritage, European technique and the standards of a MICHELIN 3 Keys resort, plated one course at a time.':'รากเหง้าอาหารไทยใต้ เทคนิคแบบยุโรป และมาตรฐานของรีสอร์ต MICHELIN 3 Keys ถ่ายทอดผ่านทุกคอร์สอย่างประณีต',
+  'รากเหง้าอาหารไทยใต้ เทคนิคยุโรป และมาตรฐานรีสอร์ตระดับโลก':'Southern Thai roots, European technique and world-class resort standards.',
+  'View the plates':'ชมจานอาหาร','Download résumé':'ดาวน์โหลดเรซูเม่',
+  'Southern Thai Heritage':'รากเหง้าอาหารไทยใต้','European Technique':'เทคนิคยุโรป','Menu Development':'พัฒนาเมนู','Chef Consulting':'ที่ปรึกษาด้านเชฟ','Pastry & Bakery':'เพสทรีและเบเกอรี่',
+  'years in luxury hospitality':'ปีในธุรกิจโรงแรมระดับหรู','chefs led in a single brigade':'เชฟที่นำทีมครัวเดียวกัน','food cost variance held':'ควบคุมส่วนต่างต้นทุนอาหารได้','signature Toffee Cakes sold':'ท็อฟฟี่เค้กซิกเนเจอร์ที่ขายได้',
+  'Recognition · Phulay Bay':'รางวัลเกียรติยศ · Phulay Bay',
+  'Phulay Bay, a Ritz-Carlton Reserve, holds the MICHELIN Guide’s highest Key distinction, three years running. I lead its culinary operations, and stepped in as in-charge Executive Chef during part of this period.':'Phulay Bay, a Ritz-Carlton Reserve ได้รับรางวัล Key ระดับสูงสุดจากคู่มือ MICHELIN ติดต่อกันสามปี ผมดูแลงานครัวของที่นี่ และรักษาการเอ็กเซ็กคูทีฟเชฟในบางช่วงเวลานี้',
+  'KPI results · 2025–2026':'ผลลัพธ์ KPI · 2025–2026','Numbers that follow':'ตัวเลขที่ตามรอย','the plates.':'ทุกจานอาหาร',
+  'Guest and quality results for Phulay Bay culinary, including the period I led the kitchens without an Executive Chef. Tap any figure for detail.':'ผลลัพธ์ด้านความพึงพอใจของแขกและคุณภาพงานครัว Phulay Bay รวมถึงช่วงที่ผมดูแลครัวโดยไม่มีเอ็กเซ็กคูทีฟเชฟ แตะตัวเลขเพื่อดูรายละเอียด',
+  'No.':'อันดับ','ITR score':'คะแนน ITR','Detail':'รายละเอียด','Quality of food':'คุณภาพอาหาร',
+  'Ranked No. 1 across TCLM properties. YTD 2026, during the period without an Executive Chef.':'อันดับ 1 ในบรรดาโรงแรมกลุ่ม TCLM สะสมปี 2026 ในช่วงที่ไม่มีเอ็กเซ็กคูทีฟเชฟ',
+  'Ranked No. 3 across TCLM properties. YTD 2026, during the period without an Executive Chef.':'อันดับ 3 ในบรรดาโรงแรมกลุ่ม TCLM สะสมปี 2026 ในช่วงที่ไม่มีเอ็กเซ็กคูทีฟเชฟ',
+  'Phulay Bay ITR':'ITR ของ Phulay Bay','APEC Luxury ranking: No. 1 property in the ranking.':'การจัดอันดับ APEC Luxury: โรงแรมอันดับ 1',
+  'Q3 vs Q2 ITR':'ITR ไตรมาส 3 เทียบไตรมาส 2','+4.2 pts':'+4.2 คะแนน','ITR improved to 95.6 in the Q3 vs Q2 report.':'ITR ดีขึ้นเป็น 95.6 ในรายงานไตรมาส 3 เทียบไตรมาส 2',
+  'Food quality':'คุณภาพอาหาร','2026 YTD, equal to the same time last year.':'สะสมปี 2026 เท่ากับช่วงเดียวกันของปีที่แล้ว',
+  'F&B guest voice':'เสียงของแขกด้าน F&B','No. 4':'อันดับ 4','No. 3':'อันดับ 3','No. 2':'อันดับ 2','No. 1':'อันดับ 1',
+  'Mid-year KPI ranking across Marriott TCLM.':'อันดับ KPI กลางปีในกลุ่ม Marriott TCLM','Guest voice score':'คะแนนเสียงของแขก','Mid-year ranking across Marriott TCLM.':'อันดับกลางปีในกลุ่ม Marriott TCLM',
+  'Overall F&B result in the LQA snapshot.':'ผลรวมด้าน F&B ในภาพรวม LQA',
+  'APEC Luxury ranker, shown at 92.6 ITR.':'อันดับ 1 ตาราง APEC Luxury ที่ ITR 92.6','Listed first in the APEC Top 5 properties comparison.':'อยู่อันดับแรกในการเปรียบเทียบ 5 ทรัพย์สินชั้นนำของ APEC','APEC global rank in the global comparison.':'อันดับ APEC ในการเปรียบเทียบระดับโลก',
+  'Rankings and scores as reported for 2025–2026 in Marriott TCLM and APEC reports.':'อันดับและคะแนนตามที่รายงานช่วงปี 2025–2026 ในรายงาน Marriott TCLM และ APEC',
+  'The chef':'เชฟ','Preserving heritage while embracing innovation.':'รักษารากเหง้า พร้อมโอบรับนวัตกรรม',
+  'I lead culinary teams in ultra-luxury resorts, Michelin-level dining rooms, banquets and private Chef’s Table concepts. My cooking joins refined European technique with the flavors of Southern Thailand, held to luxury hospitality standards.':'ผมนำทีมครัวในรีสอร์ตระดับอัลตราลักซ์ชัวรี ห้องอาหารระดับมิชลิน งานเลี้ยง และคอนเซ็ปต์เชฟส์เทเบิลส่วนตัว อาหารของผมผสานเทคนิคยุโรปอันประณีตเข้ากับรสชาติของภาคใต้ของไทย ภายใต้มาตรฐานการบริการระดับหรู',
+  'Along the way I have worked with Ritz-Carlton Reserve, Marriott International and Hyatt Hotels Corporation, and built my own private dining brand in Krabi.':'ตลอดเส้นทาง ผมได้ร่วมงานกับ Ritz-Carlton Reserve, Marriott International และ Hyatt Hotels Corporation และสร้างแบรนด์ไพรเวทไดนิ่งของตัวเองที่กระบี่',
+  'Selected plates':'จานคัดสรร','Cooked with restraint.':'ปรุงอย่างพอดี','Finished by hand.':'จัดจานด้วยมือ','Tap a plate to see it larger.':'แตะที่จานเพื่อดูภาพขยาย',
+  'One of my signature courses.':'หนึ่งในคอร์สซิกเนเจอร์ของผม','Inspired by the Andaman coast of Southern Thailand.':'แรงบันดาลใจจากชายฝั่งอันดามันของภาคใต้ไทย',
+  'Gang Som Pla Gao':'แกงส้มปลาเก๋า','Southern Thai sour curry, reimagined as a fine dining course.':'แกงส้มรสจัดของภาคใต้ ตีความใหม่เป็นคอร์สไฟน์ไดนิ่ง',
+  'Signature Toffee Cake':'ท็อฟฟี่เค้กซิกเนเจอร์','Homemade toffee cake that has sold over 10,000 pieces.':'ท็อฟฟี่เค้กโฮมเมดที่ขายได้มากกว่า 10,000 ชิ้น',
+  'Four kitchens,':'สี่ครัว','one standard.':'หนึ่งมาตรฐาน','Tap a role to read what I led there.':'แตะที่ตำแหน่งเพื่ออ่านสิ่งที่ผมดูแล',
+  'Jul 2025 — Present':'ก.ค. 2025 — ปัจจุบัน','Sep 2023 — Jul 2025':'ก.ย. 2023 — ก.ค. 2025','Mar 2023 — Aug 2023':'มี.ค. 2023 — ส.ค. 2023','Dec 2020 — Feb 2023':'ธ.ค. 2020 — ก.พ. 2023',
+  'Sous Chef · In charge of Executive Chef':'ซูส์เชฟ · รักษาการเอ็กเซ็กคูทีฟเชฟ','Sous Chef':'ซูส์เชฟ','Junior Sous Chef':'จูเนียร์ซูส์เชฟ','Co-Founder & Owner Chef':'ผู้ร่วมก่อตั้งและเชฟเจ้าของ',
+  'Lead culinary operations across several luxury dining outlets at a Michelin Key resort.':'นำงานครัวในห้องอาหารระดับหรูหลายแห่งของรีสอร์ต Michelin Key',
+  'Manage a brigade of 54 chefs and kitchen professionals.':'บริหารทีมครัว 54 คน ทั้งเชฟและบุคลากรครัว',
+  'Work with Executive Chef Christian Herrgesell on menus and culinary innovation.':'ทำงานร่วมกับเอ็กเซ็กคูทีฟเชฟ Christian Herrgesell ด้านเมนูและนวัตกรรมอาหาร',
+  'Served as in-charge Executive Chef during leadership transitions.':'รักษาการเอ็กเซ็กคูทีฟเชฟในช่วงเปลี่ยนผ่านผู้นำ',
+  'Contributed to Sritrang Restaurant’s place among Thailand’s Top 25 Restaurants.':'มีส่วนร่วมให้ร้านอาหาร Sritrang ติดอันดับ 25 ร้านอาหารยอดเยี่ยมของไทย',
+  'Ran culinary operations across All-Day Dining, Pool Bar, In-Room Dining, Regency Club and Banquets.':'ดูแลงานครัวทั้ง All-Day Dining, Pool Bar, In-Room Dining, Regency Club และงานเลี้ยง',
+  'Led and developed a team of 26 professionals.':'นำและพัฒนาทีมงาน 26 คน','Directed premium banquet catering and large-scale events.':'กำกับงานจัดเลี้ยงระดับพรีเมียมและอีเวนต์ขนาดใหญ่',
+  'Delivered international cuisine standards and premium guest dining experiences.':'ส่งมอบมาตรฐานอาหารนานาชาติและประสบการณ์การรับประทานอาหารระดับพรีเมียมให้แขก',
+  'Founded a private Chef’s Table concept in Krabi with seasonal tasting menus inspired by European, Italian and Asian cuisines.':'ก่อตั้งคอนเซ็ปต์เชฟส์เทเบิลส่วนตัวที่กระบี่ พร้อมเมนูเทสติ้งตามฤดูกาลที่ได้แรงบันดาลใจจากอาหารยุโรป อิตาเลียน และเอเชีย',
+  'Built customer loyalty through personal luxury dining.':'สร้างความภักดีของลูกค้าผ่านประสบการณ์ไดนิ่งส่วนตัวระดับหรู',
+  'Chef consulting':'ที่ปรึกษาด้านเชฟ','Your menu, your kitchen,':'เมนูของคุณ ครัวของคุณ','raised.':'ยกระดับ',
+  'Menu development, recipe standardization, food cost control and team training for independent restaurants and cafés across Thailand.':'พัฒนาเมนู มาตรฐานสูตรอาหาร ควบคุมต้นทุนอาหาร และฝึกอบรมทีม สำหรับร้านอาหารและคาเฟ่อิสระทั่วประเทศไทย',
+  'Start a conversation':'เริ่มพูดคุย','Questions people ask':'คำถามที่พบบ่อย',
+  'Who is Chef Chris?':'Chef Chris คือใคร?','Jirawat Boonsit, known as Chef Chris, is a Thai chef with more than ten years in luxury hospitality and a Sous Chef at Phulay Bay, a Ritz-Carlton Reserve.':'Jirawat Boonsit หรือ Chef Chris เป็นเชฟชาวไทยที่มีประสบการณ์ในธุรกิจโรงแรมระดับหรูกว่าสิบปี และเป็นซูส์เชฟที่ Phulay Bay, a Ritz-Carlton Reserve',
+  'Is Phulay Bay Michelin recognized?':'Phulay Bay ได้รับการยอมรับจากมิชลินหรือไม่?','Yes. Phulay Bay, a Ritz-Carlton Reserve, holds MICHELIN 3 Keys for 2024, 2025 and 2026.':'ใช่ครับ Phulay Bay, a Ritz-Carlton Reserve ได้รับ MICHELIN 3 Keys ปี 2024, 2025 และ 2026',
+  'What is his cooking style?':'สไตล์การทำอาหารเป็นอย่างไร?','Refined European technique with Southern Thai inspiration, plated with the discipline of Michelin Key luxury dining.':'เทคนิคยุโรปอันประณีตผสมแรงบันดาลใจจากอาหารไทยใต้ จัดจานด้วยวินัยแบบไฟน์ไดนิ่งระดับ Michelin Key',
+  'Does he take consulting work?':'รับงานที่ปรึกษาหรือไม่?','Yes. He advises restaurants and cafés on menus, kitchen systems, food cost and team training.':'รับครับ ให้คำปรึกษาร้านอาหารและคาเฟ่ด้านเมนู ระบบครัว ต้นทุนอาหาร และการฝึกอบรมทีม',
+  'How do I reach him?':'ติดต่อได้อย่างไร?','By email or phone using the details below, or through LinkedIn.':'ติดต่อทางอีเมลหรือโทรศัพท์ตามรายละเอียดด้านล่าง หรือผ่าน LinkedIn',
+  'Let’s talk':'มาคุยกัน','Chef':'เชฟ','Phuket, Thailand':'ภูเก็ต ประเทศไทย','Reach':'ติดต่อ','Explore':'สำรวจ',
+  'Designed and built by Chef Chris':'ออกแบบและสร้างโดย Chef Chris',
+  'Let’s plan your next table.':'มาวางแผนโต๊ะอาหารมื้อถัดไปของคุณ','Menus, kitchen systems, consulting and private dining. Tell me about your venue.':'เมนู ระบบครัว งานที่ปรึกษา และไพรเวทไดนิ่ง เล่าให้ผมฟังเกี่ยวกับสถานที่ของคุณ',
+  'Copy':'คัดลอก','Copied':'คัดลอกแล้ว',
+  'Culinary leadership · TCLM':'ภาวะผู้นำงานครัว · TCLM','ITR improvement':'ITR ที่ดีขึ้น','ITR, APEC Luxury ranking':'ITR อันดับ APEC Luxury','Mid-year KPI ranking':'อันดับ KPI กลางปี','Mid-year ranking':'อันดับกลางปี','Overall F&B result':'ผลรวมด้าน F&B','Quality of food, 2026 YTD':'คุณภาพอาหาร สะสมปี 2026',
+  'Food and Beverage Quality of Food stands at 82.7% year to date 2026, equal to the same time last year.':'คุณภาพอาหารของ Food and Beverage อยู่ที่ 82.7% สะสมปี 2026 เท่ากับช่วงเดียวกันของปีที่แล้ว',
+  'Overall Food and Beverage result of 94.8% in the LQA snapshot.':'ผลรวม Food and Beverage 94.8% ในภาพรวม LQA',
+  'Phulay Bay ITR improved by 4.2 points to 95.6 in the Q3 versus Q2 report.':'ITR ของ Phulay Bay ดีขึ้น 4.2 คะแนน เป็น 95.6 ในรายงานไตรมาส 3 เทียบไตรมาส 2',
+  'Phulay Bay is shown as the No. 1 property in the APEC Luxury ranking at 92.6 ITR.':'Phulay Bay อยู่อันดับ 1 ในการจัดอันดับ APEC Luxury ที่ ITR 92.6',
+  'Ranked No. 1 across TCLM properties. Year to date 2026, during the period without an Executive Chef.':'อันดับ 1 ในบรรดาโรงแรมกลุ่ม TCLM สะสมปี 2026 ในช่วงที่ไม่มีเอ็กเซ็กคูทีฟเชฟ',
+  'Ranked No. 3 across TCLM properties. Year to date 2026, during the period without an Executive Chef.':'อันดับ 3 ในบรรดาโรงแรมกลุ่ม TCLM สะสมปี 2026 ในช่วงที่ไม่มีเอ็กเซ็กคูทีฟเชฟ',
+  'Ranked No. 2 in the mid-year Guest Voice Score ranking across Marriott TCLM.':'อันดับ 2 ในการจัดอันดับคะแนนเสียงของแขกกลางปีในกลุ่ม Marriott TCLM',
+  'Ranked No. 4 in the mid-year F&B Guest Voice KPI ranking across Marriott TCLM.':'อันดับ 4 ในการจัดอันดับ KPI เสียงของแขกด้าน F&B กลางปีในกลุ่ม Marriott TCLM',
+  'Phulay Bay, a Ritz-Carlton Reserve, is recognized with MICHELIN 3 Keys for 2024, 2025 and 2026. Chef Chris leads its culinary operations.':'Phulay Bay, a Ritz-Carlton Reserve ได้รับ MICHELIN 3 Keys ปี 2024, 2025 และ 2026 โดย Chef Chris ดูแลงานครัวของที่นี่',
+  'Plate':'จานที่'
+  };
+  var lang='en', orig=new WeakMap(), btn=$('#lang');
+  function tr(s){ return (lang==='th'&&TH[s]!==undefined)?TH[s]:s; }
+  function apply(){
+    document.documentElement.lang=lang;
+    var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentNode;if(!p||/^(SCRIPT|STYLE)$/.test(p.nodeName)||p.closest('[data-nt]'))return NodeFilter.FILTER_REJECT;return n.nodeValue.trim()?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}});
+    var n,nodes=[];while((n=w.nextNode()))nodes.push(n);
+    nodes.forEach(function(n){
+      if(!orig.has(n))orig.set(n,n.nodeValue);
+      var o=orig.get(n), key=o.replace(/\s+/g,' ').trim();
+      if(lang==='th'&&TH[key]!==undefined){ n.nodeValue=o.match(/^\s*/)[0]+TH[key]+o.match(/\s*$/)[0]; } else n.nodeValue=o;
+    });
+    btn.textContent=lang==='th'?'EN':'ไทย';
+    btn.setAttribute('aria-label',lang==='th'?'Switch to English':'เปลี่ยนเป็นภาษาไทย');
+  }
+  btn.addEventListener('click',function(){ lang=lang==='th'?'en':'th'; try{localStorage.setItem('lang',lang)}catch(e){} apply(); });
+  try{ if(localStorage.getItem('lang')==='th'){ lang='th'; apply(); } }catch(e){}
+
   $$('dialog').forEach(function(d){
     d.addEventListener('click',function(e){ if(e.target===d||e.target.closest('[data-close]')) close(d); });
     d.addEventListener('close',function(){document.body.style.overflow=''});
@@ -484,12 +595,12 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
     b.addEventListener('click',function(){
       var t=b.getAttribute('data-pop'), h='';
       if(t==='kpi'){
-        h='<div class="caps gold">'+b.dataset.k+'</div><div class="big-n">'+b.dataset.v+'</div><h3>'+b.dataset.t+'</h3><p>'+b.dataset.x+'</p>';
+        h='<div class="caps gold">'+tr(b.dataset.k)+'</div><div class="big-n">'+tr(b.dataset.v)+'</div><h3>'+tr(b.dataset.t)+'</h3><p>'+tr(b.dataset.x)+'</p>';
       } else if(t==='role'){
         var ul=b.parentNode.querySelector('ul');
-        h='<div class="caps gold">'+b.dataset.y+'</div><h3>'+b.dataset.v+'</h3><div class="caps" style="color:var(--soft)">'+b.dataset.r+'</div><ul>'+ul.innerHTML+'</ul>';
+        h='<div class="caps gold">'+tr(b.dataset.y)+'</div><h3>'+tr(b.dataset.v)+'</h3><div class="caps" style="color:var(--soft)">'+tr(b.dataset.r)+'</div><ul>'+ul.innerHTML+'</ul>';
       } else if(t==='mich'){
-        h='<div class="caps gold">Recognition · Phulay Bay</div><h3>MICHELIN 3 Keys</h3><p>Phulay Bay, a Ritz-Carlton Reserve, is recognized with MICHELIN 3 Keys for 2024, 2025 and 2026. Chef Chris leads its culinary operations.</p><div style="margin-top:26px;max-width:280px"><img src="img/michelin-keys.png" alt="Three MICHELIN Keys" style="width:100%"></div>';
+        h='<div class="caps gold">'+tr('Recognition · Phulay Bay')+'</div><h3>MICHELIN 3 Keys</h3><p>'+tr('Phulay Bay, a Ritz-Carlton Reserve, is recognized with MICHELIN 3 Keys for 2024, 2025 and 2026. Chef Chris leads its culinary operations.')+'</p><div style="margin-top:26px;max-width:280px"><img src="img/michelin-keys.png" alt="Three MICHELIN Keys" style="width:100%"></div>';
       }
       body.innerHTML=h; open(pop);
     });
@@ -501,7 +612,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
   $$('[data-copy]').forEach(function(b){
     b.addEventListener('click',function(){
       var v=b.getAttribute('data-copy');
-      try{ navigator.clipboard.writeText(v).then(function(){say('Copied')},function(){say(v)}); }catch(e){ say(v); }
+      try{ navigator.clipboard.writeText(v).then(function(){say(tr('Copied'))},function(){say(v)}); }catch(e){ say(v); }
     });
   });
 
@@ -510,7 +621,7 @@ dialog[open]{animation:pop .35s cubic-bezier(.2,.7,.2,1)}
     idx=(i+items.length)%items.length;
     var it=items[idx], multi=items.length>1;
     img.src=it.src; img.alt=it.alt;
-    cap.textContent=multi?('Plate '+String(idx+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0')):it.cap;
+    cap.textContent=multi?(tr('Plate')+' '+String(idx+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0')):it.cap;
     ['#lb-prev','#lb-next','#lb-prev2','#lb-next2'].forEach(function(s){$(s).style.visibility=multi?'visible':'hidden'});
   }
   function openLb(group,el){
